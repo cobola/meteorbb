@@ -20,17 +20,17 @@
             </div>
           {{/if}}
 
-          <div class="input-symbol {{errorClass 'email'}}">
-            <input type="email" name="email" placeholder="Your Email" />
+          <div class="form-group {{errorClass 'email'}}">
+            <input type="email" name="email" placeholder="Your Email" class="form-control" />
             <span class="icon-email" title="Your Email"></span>
           </div>
 
-          <div class="input-symbol {{errorClass 'password'}}">
-            <input type="password" name="password" placeholder="Password" />
+          <div class="form-group {{errorClass 'password'}}">
+            <input type="password" name="password" placeholder="Password" class="form-control" />
             <span class="icon-lock" title="Password"></span>
           </div>
 
-          <button type="submit" class="btn-primary">Sign in</button>
+          <button type="submit" class="btn btn-primary">Sign in</button>
         </form>
       </div>
 
