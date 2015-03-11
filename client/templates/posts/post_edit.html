@@ -1,0 +1,23 @@
+<template name="postEdit">
+  <form class="main form page">
+
+    <div class="form-group {{errorClass 'title'}}">
+      <label class="control-label" for="title">Title</label>
+      <div class="controls">
+          <input name="title" id="title" type="text" value="{{title}}" placeholder="Name your post" class="form-control"/>
+          <span class="help-block">{{errorMessage 'title'}}</span>
+      </div>
+    </div>
+
+      <div class="form-group {{errorClass 'content'}}">
+          <label class="control-label" for="content">Content</label>
+          <div class="controls">
+              <input name="content" id="content" type="text" value="{{content}}" placeholder="Your Content" class="form-control"/>
+              <span class="help-block">{{errorMessage 'url'}}</span>
+          </div>
+      </div>
+    <input type="submit" value="Submit" class="btn btn-primary submit"/>
+    <hr/>
+    <a class="btn btn-danger delete" href="#">Delete post</a>
+  </form>
+</template>
