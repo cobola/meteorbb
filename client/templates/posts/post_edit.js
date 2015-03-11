@@ -18,12 +18,12 @@ Template.postEdit.events({
     var currentPostId = this._id;
     
     var postProperties = {
-      url: $(e.target).find('[name=url]').val(),
+      content: $(e.target).find('[name=content]').val(),
       title: $(e.target).find('[name=title]').val()
     }
     
     var errors = validatePost(postProperties);
-    if (errors.title || errors.url)
+    if (errors.title || errors.content)
       return Session.set('postEditErrors', errors);
     
     Posts.update(currentPostId, {$set: postProperties}, function(error) {

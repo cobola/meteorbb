@@ -12,3 +12,5 @@ accounts-password
 ian:accounts-ui-bootstrap-3
 audit-argument-checks
 
+fortawesome:fontawesome
+froala:editor

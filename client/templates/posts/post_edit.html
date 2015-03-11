@@ -1,4 +1,4 @@
-<template name="postEdit">
+<template name="postEdit" xmlns="http://www.w3.org/1999/html">
   <form class="main form page">
 
     <div class="form-group {{errorClass 'title'}}">
@@ -12,10 +12,22 @@
       <div class="form-group {{errorClass 'content'}}">
           <label class="control-label" for="content">Content</label>
           <div class="controls">
-              <input name="content" id="content" type="text" value="{{content}}" placeholder="Your Content" class="form-control"/>
-              <span class="help-block">{{errorMessage 'url'}}</span>
+              <textarea name="content" id="content" placeholder="Your Content" class="form-control">{{content}}</textarea>
+
+              <span class="help-block">{{errorMessage 'content'}}</span>
           </div>
       </div>
+
+
+      <script>
+          $(function() {
+              $('#content').editable({
+                  buttons: ['undo', 'redo' , 'sep', 'bold', 'italic', 'underline','align','insertOrderedList','insertUnorderedList'],
+                  inlineMode: false
+              })
+          });
+      </script>
+
     <input type="submit" value="Submit" class="btn btn-primary submit"/>
     <hr/>
     <a class="btn btn-danger delete" href="#">Delete post</a>
