@@ -166,6 +166,7 @@ Template.listsShow.events({
     Todos.insert({
       listId: this._id,
       text: $input.val(),
+
       checked: false,
       createdAt: new Date()
     });

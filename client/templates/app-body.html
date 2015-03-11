@@ -8,11 +8,11 @@
                 </a>
             </div>
 
-            <ul class="nav navbar-nav navbar-right">
-
-
-
-            </ul>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    {{> loginButtons}}
+                </ul>
+            </div>
 
         </div>
     </nav>
@@ -58,36 +58,10 @@
 
         <section id="menu" class="col-md-3">
 
-            <div class="panel panel-default">
-                <div class="panel-heading">MeteorBB</div>
-                <div class="panel-body">
-                    {{#if currentUser}}
-                        <li class="btn btn-default  nav-btn">
-                            <a href="#" class="js-user-menu">
-                                {{#if userMenuOpen}}
-                                    <span class="icon-arrow-up"></span>
-                                {{else}}
-                                    <span class="icon-arrow-down"></span>
-                                {{/if}}
-                                {{emailLocalPart}}
-                            </a></li>
-                        {{#if userMenuOpen}}
-                            <li class="btn btn-default"><a class="js-logout">Logout</a></li>
-                        {{/if}}
 
-                    {{else}}
-                        <li class="btn btn-default">
-                            <a href="{{pathFor 'signin'}}" class="">Sign In</a></li>
-                        <li class="btn btn-default">
-                            <a href="{{pathFor 'join'}}" class="">Sign UP</a>
-                        </li>
-                    {{/if}}
-
-                </div>
-            </div>
 
             <div class="panel panel-default">
-                <div class="panel-heading">Node list</div>
+                <div class="panel-heading">Nodes</div>
                 <div class="panel-body">
                     {{#each lists}}
                         <a href="{{pathFor 'listsShow'}}" class="{{activeListClass}}" title="{{name}}">
@@ -100,14 +74,6 @@
                             {{name}}
                         </a>
                     {{/each}}
-
-                </div>
-            </div>
-
-            <div class="panel panel-default">
-                <div class="panel-heading">Infos</div>
-                <div class="panel-body">
-                    <p>Last:</p>
 
                 </div>
             </div>
@@ -133,6 +99,6 @@
     </div>
 
     <a href="http://github.com/cobola/meteorbb">
-        <img style="position: absolute; z-index: 5; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+        <img style="position: absolute; z-index: 5; top: 0; left: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub">
     </a>
 </template>

@@ -10,3 +10,4 @@ less
 iron:router@0.9.4
 accounts-password
 twbs:bootstrap
+ian:accounts-ui-bootstrap-3
