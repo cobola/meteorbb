@@ -9,8 +9,8 @@ ohooo
 #demo <http://www.meteorbb.com>
 
 
-License
+#License
 
-"THE ICECREAM-WARE LICENSE" (Revision 42):
+"THE ICECREAM-WARE LICENSE" (Revision 43):
 
 As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a icecream in return
