@@ -16,18 +16,7 @@
         <h1 class="js-edit-list title-page"><span class="title-wrapper">{{name}}</span> <span class="count-list">{{incompleteCount}}</span></h1>
 
         <div class="nav-group right">
-          <div class="nav-item options-mobile">
-            <select class="list-edit">
-              <option disabled selected>Select an action</option>
-              {{#if userId}}
-                <option value="public">Make Public</option>
-              {{else}}
-                <option value="private">Make Private</option>
-              {{/if}}
-              <option value="delete">Delete</option>
-            </select>
-            <span class="icon-cog"></span>
-          </div>
+
           <div class="options-web">
             <a class="js-toggle-list-privacy nav-item">
               {{#if userId}}
@@ -44,8 +33,8 @@
         </div>
       {{/if}}
 
-      <form class="js-todo-new todo-new input-symbol">
-        <input type="text" placeholder="Type to add new tasks">
+      <form class="form js-todo-new todo-new input-symbol">
+        <input type="text" placeholder="Type to add new post" class="form-control">
         <span class="icon-add js-todo-add"></span>
       </form>
     </nav>
@@ -60,14 +49,14 @@
             {{> todosItem}}
           {{else}}
             <div class="wrapper-message">
-              <div class="title-message">No tasks here</div>
-              <div class="subtitle-message">Add new tasks using the field above</div>
+              <div class="title-message">No post here</div>
+              <div class="subtitle-message">Add new post using the field above</div>
             </div>
           {{/each}}
         {{/with}}
       {{else}}
           <div class="wrapper-message">
-            <div class="title-message">Loading tasks...</div>
+            <div class="title-message">Loading post...</div>
           </div>
       {{/if}}
     </div>

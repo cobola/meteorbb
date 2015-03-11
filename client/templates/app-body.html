@@ -1,87 +1,138 @@
 <template name="appBody">
 
-
-
-
-
-  <div id="container" class="container {{menuOpen}} {{cordova}}">
-
-
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">
-          MeteorBB
-          </a>
-        </div>
-
-        <div class="form-group navbar-right">
-
-          {{#if currentUser}}
-            <div class="btn-group nav-btn">
-              <a href="#" class="js-user-menu btn btn-default nav-btn">
-                {{#if userMenuOpen}}
-                  <span class="icon-arrow-up"></span>
-                  {{else}}
-                  <span class="icon-arrow-down"></span>
-                {{/if}}
-                {{emailLocalPart}}
-              </a>
-              {{#if userMenuOpen}}
-                <a class="js-logout btn btn-danger">Logout</a>
-              {{/if}}
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    MeteorBB,A forum platform ON Meteor.
+                </a>
             </div>
-          {{else}}
-            <div class="btn-group nav-btn">
-              <a href="{{pathFor 'signin'}}" class="btn btn-default nav-btn">Sign In</a>
-              <a href="{{pathFor 'join'}}" class="btn btn-default nav-btn">Join</a>
-            </div>
-          {{/if}}
+
+            <ul class="nav navbar-nav navbar-right">
+
+
+
+            </ul>
 
         </div>
-
-      </div>
     </nav>
 
-    <section id="menu" class="col-md-3">
+    <div id="container" class="container {{menuOpen}} {{cordova}}">
 
 
-      <ul class="list-group">
-        <a class="js-new-list link-group-item"><span class="icon-plus"></span>New List</a>
 
-        {{#each lists}}
-          <a href="{{pathFor 'listsShow'}}" class="list-group-item {{activeListClass}}" title="{{name}}">
-            {{#if userId}}
-              <span class="icon-lock"></span>
-            {{/if}}
-            {{#if incompleteCount}}
-              <span class="count-list">{{incompleteCount}}</span>
-            {{/if}}
-            {{name}}
-          </a>
-        {{/each}}
 
-      </ul>
-    </section>
 
-    {{#unless connected}}
-      <div class="notifications">
-        <div class="notification">
-          <span class="icon-sync"></span>
-          <div class="meta">
-            <div class="title-notification">Trying to connect</div>
-            <div class="description">There seems to be a connection issue</div>
-          </div>
+
+        {{#unless connected}}
+            <div class="notifications">
+                <div class="notification">
+                    <span class="icon-sync"></span>
+
+                    <div class="meta">
+                        <div class="title-notification">Trying to connect</div>
+                        <div class="description">There seems to be a connection issue</div>
+                    </div>
+                </div>
+            </div>
+        {{/unless}}
+
+        <div class="content-overlay"></div>
+
+        <div id="content-container" class="col-md-9">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Welcome to MeteorBB
+
+                </div>
+                <div class="panel-body">
+
+                    {{#each thisArray}}
+                        {{> yield}}
+                    {{/each}}
+                </div>
+            </div>
+
         </div>
-      </div>
-    {{/unless}}
 
-    <div class="content-overlay"></div>
 
-    <div id="content-container" class="col-md-9">
-      {{#each thisArray}}
-        {{> yield}}
-      {{/each}}
+        <section id="menu" class="col-md-3">
+
+            <div class="panel panel-default">
+                <div class="panel-heading">MeteorBB</div>
+                <div class="panel-body">
+                    {{#if currentUser}}
+                        <li class="btn btn-default  nav-btn">
+                            <a href="#" class="js-user-menu">
+                                {{#if userMenuOpen}}
+                                    <span class="icon-arrow-up"></span>
+                                {{else}}
+                                    <span class="icon-arrow-down"></span>
+                                {{/if}}
+                                {{emailLocalPart}}
+                            </a></li>
+                        {{#if userMenuOpen}}
+                            <li class="btn btn-default"><a class="js-logout">Logout</a></li>
+                        {{/if}}
+
+                    {{else}}
+                        <li class="btn btn-default">
+                            <a href="{{pathFor 'signin'}}" class="">Sign In</a></li>
+                        <li class="btn btn-default">
+                            <a href="{{pathFor 'join'}}" class="">Sign UP</a>
+                        </li>
+                    {{/if}}
+
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Node list</div>
+                <div class="panel-body">
+                    {{#each lists}}
+                        <a href="{{pathFor 'listsShow'}}" class="{{activeListClass}}" title="{{name}}">
+                            {{#if userId}}
+                                <span class="icon-lock"></span>
+                            {{/if}}
+                            <!--{{#if incompleteCount}}-->
+                                <!--<span class="count-list">{{incompleteCount}}</span>-->
+                            <!--{{/if}}-->
+                            {{name}}
+                        </a>
+                    {{/each}}
+
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Infos</div>
+                <div class="panel-body">
+                    <p>Last:</p>
+
+                </div>
+            </div>
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">Links</div>
+                <div class="panel-body">
+                    <p><a href="http://www.meteor.com">Meteor</a></p>
+
+                    <p><a href="http://zh.discovermeteor.com">Discovery Meteor</a></p>
+                </div>
+            </div>
+
+
+            <ul class="list-group">
+                <a class="js-new-list link-group-item"><span class="icon-plus"></span>New List</a>
+
+
+            </ul>
+        </section>
+
     </div>
-  </div>
+
+    <a href="http://github.com/cobola/meteorbb">
+        <img style="position: absolute; z-index: 5; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+    </a>
 </template>
