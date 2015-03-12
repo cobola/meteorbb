@@ -11,8 +11,8 @@
       <p>
         <!--{{pluralize votes "Vote"}},-->
         <b>{{author.username}}</b>
-        <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
-        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
+        <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "评论"}}</a>
+        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">编辑</a>{{/if}}
       </p>
     </div>
   </div>

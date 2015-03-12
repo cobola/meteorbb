@@ -8,3 +8,5 @@ Accounts.ui.config({
 Accounts.config({
   sendVerificationEmail:true
 });
+
+moment.locale('zh-cn');

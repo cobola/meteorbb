@@ -9,7 +9,7 @@
 
 body {
   background: #eee;
-  color: #666666; }
+   }
 
 #main {
   position: relative;
@@ -157,4 +157,8 @@ body {
   clear: both;
   margin-bottom: 5px;
   pointer-events: auto;
+}
+
+.navbar-default{
+  /*background-color: #00CCFF;*/
 }
