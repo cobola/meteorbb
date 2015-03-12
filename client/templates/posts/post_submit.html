@@ -13,22 +13,16 @@
             <label class="control-label" for="content">Content</label>
 
             <div class="controls">
-                <!--<div id="content"></div>-->
-
-              <textarea name="content" id="content" class="form-control">
-                  </textarea>
+              <textarea name="content" id="content"  data-provide="markdown" rows="10"></textarea>
                 <span class="help-block">{{errorMessage 'content'}}</span>
             </div>
         </div>
 
+
         <script>
-            $(function() {
-                $('#content').editable({
-                    buttons: ['undo', 'redo' , 'sep', 'bold', 'italic', 'underline','align','insertOrderedList','insertUnorderedList'],
-                    inlineMode: false
-                })
-            });
+            $("#content").markdown({autofocus:false,savable:false})
         </script>
+
 
         <input type="submit" value="Submit" class="btn btn-primary"/>
     </form>

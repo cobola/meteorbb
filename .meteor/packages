@@ -8,9 +8,11 @@ twbs:bootstrap
 underscore
 iron:router@1.0.0-rc.1
 sacha:spin
-accounts-password
 ian:accounts-ui-bootstrap-3
 audit-argument-checks
 
 fortawesome:fontawesome
-froala:editor
+wtfzn:bootstrap-markdown
+jparker:gravatar
+accounts-password
+email

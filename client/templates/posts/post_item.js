@@ -10,6 +10,18 @@ Template.postItem.helpers({
     } else {
       return 'disabled';
     }
+  },
+  avator:function(){
+    //var email ;
+    var email = Meteor.user().emails[0].address;
+    var options = {
+      secure: true // choose between `http://www.gravatar.com`
+                   //            and `https://secure.gravatar.com`
+                   //            default is `false`
+    };
+
+
+    return  Gravatar.imageUrl(email, options);
   }
 });
 

@@ -18,15 +18,10 @@
           </div>
       </div>
 
-
       <script>
-          $(function() {
-              $('#content').editable({
-                  buttons: ['undo', 'redo' , 'sep', 'bold', 'italic', 'underline','align','insertOrderedList','insertUnorderedList'],
-                  inlineMode: false
-              })
-          });
+          $("#content").markdown({autofocus:false,savable:false})
       </script>
+
 
     <input type="submit" value="Submit" class="btn btn-primary submit"/>
     <hr/>
