@@ -15,8 +15,8 @@ Template.postItem.helpers({
         //var email ;
 
         var email = '';
-        if (Meteor.user()) {
-            email = Meteor.user().emails[0].address;
+        if (this.author.emails) {
+            email =this.author.emails[0].address;
         } else {
             return 'http://cobola.qiniudn.com/avatar.jpg';
         }

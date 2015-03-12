@@ -10,7 +10,7 @@
       </p>
       <p>
         <!--{{pluralize votes "Vote"}},-->
-        submitted by {{author}},
+        <b>{{author.username}}</b>
         <a href="{{pathFor 'postPage'}}">{{pluralize commentsCount "comment"}}</a>
         {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edit</a>{{/if}}
       </p>

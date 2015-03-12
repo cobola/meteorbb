@@ -1,5 +1,7 @@
 Template.commentItem.helpers({
-  submittedText: function() {
-    return this.submitted.toString();
+  updatedText: function() {
+    var a =moment(this.updated).fromNow();
+    console.log(a);
+    return a;
   }
 });
