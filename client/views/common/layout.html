@@ -1,0 +1,20 @@
+<template name="layout">
+
+{{> UI.dynamic template=css}}
+  <div class="outer-wrapper {{currentPage}}">
+    {{> UI.dynamic template=mobile_nav}}
+    <div class="inner-wrapper template-{{pageName}}">
+      {{> UI.dynamic template=nav}}
+      <div class="content-wrapper">
+        {{> UI.dynamic template=messages}}
+        {{#each heroModules}}
+          {{> UI.dynamic template=getTemplate}}
+        {{/each}}
+        {{> yield}}
+        {{> UI.dynamic template=footer}}
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    {{{extraCode}}}
+  </div>
+</template>

@@ -3,17 +3,88 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-standard-app-packages
-twbs:bootstrap
-underscore
-iron:router@1.0.0-rc.1
-sacha:spin
-ian:accounts-ui-bootstrap-3
-audit-argument-checks
+# Meteor Packages
 
-fortawesome:fontawesome
-wtfzn:bootstrap-markdown
-jparker:gravatar
+standard-app-packages
+backbone
+accounts-base
 accounts-password
+accounts-twitter
+spiderable
 email
+accounts-facebook
+service-configuration
+accounts-ui
+reactive-var
+http
+
+# Atmosphere Packages
+
+iron:router
+
+meteorhacks:fast-render
+meteorhacks:subs-manager
+meteorhacks:npm
+
+aldeed:autoform@5.0.0
+aldeed:collection2
+aldeed:simple-schema
+
+mrt:jquery-hotkeys
+mrt:cookies
+
+ccan:cssreset # CSS reset (Must come before any other css)
+cmather:handlebars-server
+sacha:spin
+sacha:juice
+chuangbo:marked
+percolatestudio:synced-cron
+npm-container
+matb33:collection-hooks
+djedi:sanitize-html
+rajit:bootstrap3-datepicker
+bengott:avatar
+jparker:gravatar
+tap:i18n
+useraccounts:unstyled@1.4.0
+tsega:bootstrap3-datetimepicker@3.1.3_1
 momentjs:moment
+aslagle:reactive-table
+
+# Testing
+
+# sanjo:jasmine
+# velocity:html-reporter
+
+# Telescope Packages (Required)
+
+telescope-base
+telescope-lib
+telescope-i18n
+
+# Telescope Packages (Optional)
+
+telescope-datetimepicker
+telescope-theme-base
+telescope-module-share
+telescope-api
+telescope-rss
+telescope-search
+telescope-tags
+telescope-theme-hubble
+telescope-email
+telescope-embedly
+telescope-newsletter
+telescope-daily
+telescope-update-prompt
+telescope-kadira
+telescope-notifications
+telescope-singleday
+telescope-invites
+telescope-post-by-feed
+telescope-releases
+telescope-getting-started
+telescope-subscribe-to-posts
+telescope-tagline-banner
+
+# Custom Packages
