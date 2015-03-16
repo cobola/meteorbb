@@ -18,22 +18,6 @@ postSchemaObject = {
       omit: true
     }
   },
-  postedAt: {
-    type: Date,
-    optional: true,
-    autoform: {
-      group: 'admin',
-      type: "bootstrap-datetimepicker"
-    }
-  },
-  url: {
-    type: String,
-    optional: true,
-    autoform: {
-      editable: true,
-      type: "bootstrap-url"
-    }
-  },
   title: {
     type: String,
     optional: false,

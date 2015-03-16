@@ -1,6 +1,6 @@
 ### Quick Deploy
 
-Once you've played around with Telescope, you might want to deploy your app for the whole world to see. 
+Once you've played around with MeteorBB, you might want to deploy your app for the whole world to see.
 
 You can do so easily using Meteor's own free hosting service. Just open a terminal window, go to your Telescope app's directory, and type:
 
