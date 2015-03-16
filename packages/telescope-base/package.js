@@ -2,7 +2,7 @@ Package.describe({summary: "Telescope base package"});
 
 Package.onUse(function (api) {
 
-  api.use(['telescope-i18n', 'telescope-lib', 'aldeed:simple-schema', 'check']);
+  api.use(['meteorbb-i18n', 'telescope-lib', 'aldeed:simple-schema', 'check']);
   api.imply(['aldeed:simple-schema']);
 
   api.add_files(['lib/base.js'], ['client', 'server']);

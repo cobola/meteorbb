@@ -19,7 +19,7 @@ Package.onUse(function (api) {
     'iron:router',
     'telescope-base',
     'telescope-lib',
-    'telescope-i18n',
+    'meteorbb-i18n',
     'aldeed:simple-schema',
     'aldeed:autoform'
   ]);

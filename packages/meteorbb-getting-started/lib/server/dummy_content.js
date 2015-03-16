@@ -13,7 +13,7 @@ var createPost = function (slug, postedAt, username, thumbnail) {
   }
 
   if (typeof thumbnail !== "undefined")
-    post.thumbnailUrl = "/packages/telescope-getting-started/content/images/" + thumbnail
+    post.thumbnailUrl = "/packages/meteorbb-getting-started/content/images/" + thumbnail
 
   submitPost(post);
 }
@@ -35,8 +35,8 @@ var createComment = function (slug, username, body, parentBody) {
 
 var createDummyUsers = function () {
   Accounts.createUser({
-    username: 'Bruce',
-    email: 'dummyuser1@telescopeapp.org',
+    username: 'cobola',
+    email: 'cobola@gmail.com',
     profile: {
       isDummy: true
     }
@@ -59,28 +59,30 @@ var createDummyUsers = function () {
 
 var createDummyPosts = function () {
 
-  createPost("read_this_first", moment().toDate(), "Bruce", "telescope.png");
+  createPost("read_this_first", moment().toDate(), "cobola", "telescope.png");
 
-  createPost("deploying_telescope", moment().subtract(10, 'minutes').toDate(), "Arnold");
+  createPost("deploying_meteorbb", moment().subtract(10, 'minutes').toDate(), "Arnold");
 
-  createPost("customizing_telescope", moment().subtract(3, 'hours').toDate(), "Julia");
+  createPost("customizing_meteorbb", moment().subtract(3, 'hours').toDate(), "Julia");
 
-  createPost("getting_help", moment().subtract(1, 'days').toDate(), "Bruce", "stackoverflow.png");
+  createPost("getting_help", moment().subtract(1, 'days').toDate(), "cobola", "stackoverflow.png");
 
   createPost("removing_getting_started_posts", moment().subtract(2, 'days').toDate(), "Julia");
+
+  createPost("why",moment().toDate(),"cobola");
 
 }
 
 var createDummyComments = function () {
 
-  createComment("read_this_first", "Bruce", "What an awesome app!");
+  createComment("read_this_first", "cobola", "太酷了 !");
 
-  createComment("deploying_telescope", "Arnold", "Deploy to da choppah!");
-  createComment("deploying_telescope", "Julia", "Do you really need to say this all the time?", "Deploy to the choppah!");
+  createComment("deploying_meteorbb", "Arnold", "Deploy to da choppah!");
+  createComment("deploying_meteorbb", "Julia", "Do you really need to say this all the time?", "Deploy to the choppah!");
 
-  createComment("customizing_telescope", "Julia", "I can't wait to make my app pretty. Get it? *Pretty*?");
+  createComment("customizing_meteorbb", "Julia", "I can't wait to make my app pretty. Get it? *Pretty*?");
 
-  createComment("removing_getting_started_posts", "Bruce", "Yippee ki-yay, motherfucker!");
+  createComment("removing_getting_started_posts", "cobola", "Yippee ki-yay, motherfucker!");
   createComment("removing_getting_started_posts", "Arnold", "I don't think you're supposed to swear in here…", "Yippee ki-yay, motherfucker!");
 
 }

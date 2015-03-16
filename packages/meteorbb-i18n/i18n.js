@@ -33,7 +33,7 @@ setLanguage = function (language) {
 i18n = {
   t: function (str, options) {
     if (Meteor.isServer) {
-      return TAPi18n.__(str, options, getSetting('language', 'en')); 
+      return TAPi18n.__(str, options, getSetting('language', 'zh-CN'));
     } else {
       return TAPi18n.__(str, options); 
     }
@@ -56,7 +56,7 @@ Meteor.startup(function () {
     //   }
     // });
 
-    setLanguage(getSetting('language', 'en'));
+    setLanguage(getSetting('language', 'zh-CN'));
   }
 
 });

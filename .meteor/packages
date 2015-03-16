@@ -60,7 +60,7 @@ aslagle:reactive-table
 
 telescope-base
 telescope-lib
-telescope-i18n
+meteorbb-i18n
 
 # Telescope Packages (Optional)
 
@@ -82,8 +82,8 @@ telescope-notifications
 telescope-singleday
 telescope-invites
 telescope-post-by-feed
-telescope-releases
-telescope-getting-started
+meteorbb-releases
+meteorbb-getting-started
 telescope-subscribe-to-posts
 telescope-tagline-banner
 
