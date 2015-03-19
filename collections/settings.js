@@ -11,7 +11,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'general',
-      instructions: 'Your site\'s URL (with trailing "/"). Will default to Meteor.absoluteUrl()'
+      instructions: '站点的URL'
     }
   },
   tagline: {
@@ -27,7 +27,7 @@ settingsSchemaObject = {
     autoform: {
       group: 'general',
       rows: 5,
-      instructions: 'A short description used for SEO purposes.'
+      instructions: '网站简介'
     }
   },
   requireViewInvite: {
@@ -69,7 +69,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'email',
-      instructions: 'MAIL_URL environment variable (requires restart).',
+      instructions: 'MAIL_URL 环境变量 需要设置 (需要重启).',
       private: true
     }
   },  
@@ -182,11 +182,11 @@ settingsSchemaObject = {
   },
   language: {
     type: String,
-    defaultValue: 'en',
+    defaultValue: 'zh-CN',
     optional: true,
     autoform: {
       group: 'general',
-      instructions: 'The app\'s language. Defaults to English.',
+      instructions: '站点语言，默认是中文.',
       options: function () {
         var languages = _.map(TAPi18n.getLanguages(), function (item, key) {
           return {
