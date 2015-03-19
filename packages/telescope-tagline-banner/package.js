@@ -11,7 +11,7 @@ Package.onUse(function (api) {
   // automatic (let the package specify where it's needed)
 
   api.use([
-    'telescope-base',             // basic Telescope hooks and objects
+    'meteorbb-base',             // basic Telescope hooks and objects
     'telescope-lib',              // useful functions
     'fourseven:scss',             // SCSS compilation package
     'tap:i18n'

@@ -58,7 +58,7 @@ aslagle:reactive-table
 
 # Telescope Packages (Required)
 
-telescope-base
+meteorbb-base
 telescope-lib
 meteorbb-i18n
 

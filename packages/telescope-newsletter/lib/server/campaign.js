@@ -43,9 +43,7 @@ buildCampaign = function (postsArray) {
 
     if (post.body)
       properties.body = marked(trimWords(post.body, 20)).replace('<p>', '').replace('</p>', ''); // remove p tags
-    
-    if(post.url)
-      properties.domain = getDomain(post.url)
+
 
     postsHTML += getEmailTemplate('emailPostItem')(properties);
   });

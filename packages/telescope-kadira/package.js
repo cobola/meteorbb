@@ -9,7 +9,7 @@ Package.onUse(function (api) {
   api.use([
     'templating',
     'telescope-lib', 
-    'telescope-base',
+    'meteorbb-base',
     'tap:i18n',
     'meteorhacks:kadira@2.17.2'
   ], ['client', 'server']);

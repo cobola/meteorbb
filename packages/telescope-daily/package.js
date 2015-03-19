@@ -4,7 +4,7 @@ Package.onUse(function (api) {
 
   api.use([
     'telescope-lib', 
-    'telescope-base', 
+    'meteorbb-base',
     'iron:router',
     'meteorhacks:fast-render', 
     'meteorhacks:subs-manager',

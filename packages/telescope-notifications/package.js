@@ -8,7 +8,7 @@ Package.onUse(function (api) {
 
   api.use([
     'telescope-lib',
-    'telescope-base',
+    'meteorbb-base',
     'telescope-email',
     'iron:router',
     'kestanous:herald@1.3.0',

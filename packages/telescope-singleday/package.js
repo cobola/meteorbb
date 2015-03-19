@@ -15,7 +15,7 @@ Package.onUse(function (api) {
   // automatic (let the package specify where it's needed)
 
   api.use([
-    'telescope-base',
+    'meteorbb-base',
     'telescope-lib',
     'meteorbb-i18n',
     'tap:i18n',

@@ -72,7 +72,9 @@
   "sorry_couldnt_find_a_title": "抱歉找不相关话题",
   "please_fill_in_an_url_first": "请在第一栏填写链接",
 
+
   "sorry_we_couldnt_find_any_posts": "对不起，一个帖子都没有找到！",
+
 
   // Post item
   "share": "分享",
@@ -141,6 +143,9 @@
   "uninvited": "未被邀请",
   "filter_by": "过滤",
   "sort_by": "排序",
+
+
+  "you_ve_been_signed_out": "你已经注销了，下次再来哦！",
 
   //helpers
   "sorry_you_do_not_have_access_to_this_page": "抱歉你没有权限访问此页面",
