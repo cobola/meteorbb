@@ -69,7 +69,7 @@ telescope-theme-base
 telescope-module-share
 telescope-api
 telescope-rss
-telescope-search
+meteorbb-search
 telescope-tags
 telescope-theme-hubble
 telescope-email

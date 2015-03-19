@@ -250,16 +250,16 @@ var migrationsList = {
     });
     return i;
   },
-  submittedToPostedAt: function () {
-    var i = 0;
-    Posts.find({postedAt: {$exists : false}}).forEach(function (post) {
-      i++;
-      console.log("Post: "+post._id);
-      Posts.update(post._id, { $rename: { 'submitted': 'postedAt'}}, {multi: true, validate: false});
-      console.log("---------------------");
-    });
-    return i;
-  },
+  //submittedToPostedAt: function () {
+  //  var i = 0;
+  //  Posts.find({postedAt: {$exists : false}}).forEach(function (post) {
+  //    i++;
+  //    console.log("Post: "+post._id);
+  //    //Posts.update(post._id, { $rename: { 'submitted': 'postedAt'}}, {multi: true, validate: false});
+  //    console.log("---------------------");
+  //  });
+  //  return i;
+  //},
   addPostedAtToComments: function () {
     var i = 0;
     Comments.find({postedAt: {$exists : false}}).forEach(function (comment) {

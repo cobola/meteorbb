@@ -199,12 +199,9 @@ getPostProperties = function (post) {
     postTitle : cleanUp(post.title),
     profileUrl: getProfileUrlBySlugOrId(post.userId),
     postUrl: getPostPageUrl(post),
-    thumbnailUrl: post.thumbnailUrl,
-    linkUrl: !!post.url ? getOutgoingUrl(post.url) : getPostPageUrl(post._id)
+    thumbnailUrl: post.thumbnailUrl
   };
 
-  if(post.url)
-    p.url = post.url;
 
   if(post.htmlBody)
     p.htmlBody = post.htmlBody;
@@ -234,7 +231,7 @@ getPostEditUrl = function(id){
 
 // for a given post, return its link if it has one, or else its post page URL
 getPostLink = function (post) {
-  return !!post.url ? getOutgoingUrl(post.url) : getPostPageUrl(post);
+  return getPostPageUrl(post);
 };
 
 // we need the current user so we know who to upvote the existing post as
@@ -301,9 +298,6 @@ submitPost = function (post) {
   if(!post.title)
     throw new Meteor.Error(602, i18n.t('please_fill_in_a_title'));
 
-  // check that there are no posts with the same URL
-  if(!!post.url)
-    checkForPostsWithSameUrl(post.url, user);
 
   // ------------------------------ Properties ------------------------------ //
 
