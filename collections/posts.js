@@ -18,6 +18,14 @@ postSchemaObject = {
       omit: true
     }
   },
+  postedAt: {
+    type: Date,
+    optional: true,
+    autoform: {
+      group: 'admin',
+      type: "bootstrap-datetimepicker"
+    }
+  },
   title: {
     type: String,
     optional: false,
