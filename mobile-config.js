@@ -1,6 +1,6 @@
 App.info({
   name: 'MeteorBB',
-  description: 'A forum platform ON Meteor.',
+  description: 'No Meteor , No BB',
   author: 'cobola',
   email: 'cobola@gmail.com',
   website: 'http://meteorbb.com',

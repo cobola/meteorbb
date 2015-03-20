@@ -1,11 +1,11 @@
 <template name="layout">
 
 {{> UI.dynamic template=css}}
-  <div class="outer-wrapper {{currentPage}}">
+  <div class=" {{currentPage}}">
     {{> UI.dynamic template=mobile_nav}}
     <div class="inner-wrapper template-{{pageName}}">
       {{> UI.dynamic template=nav}}
-      <div class="content-wrapper">
+      <div class="container">
         {{> UI.dynamic template=messages}}
         {{#each heroModules}}
           {{> UI.dynamic template=getTemplate}}

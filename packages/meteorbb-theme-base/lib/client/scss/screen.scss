@@ -1,0 +1,17 @@
+
+
+@import "includes/_breakpoints.scss";
+@import "includes/_colors.scss";
+@import "includes/_mixins.scss";
+
+
+
+// Specific Styles (header, posts, etc.)
+
+@import "specific/avatars";
+@import "specific/errors";
+@import "specific/header";
+@import "specific/loading";
+@import "specific/notifications";
+@import "specific/posts";
+@import "specific/users";
