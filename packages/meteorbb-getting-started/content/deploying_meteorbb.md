@@ -20,6 +20,7 @@ Hosting on `*.meteor.com` is fine for small apps and prototypes, but if you want
 
 Check out [the Telescope documentation](http://www.telesc.pe/docs/getting-started/deploying/) to learn more about this topic.
 
+
 ### 快速开发
 一旦你已经开始使用Telescope，你可能会想开发一个全世界都能访问的，属于你的app。你能够很轻松的使用Meteor提供的免费主机服务来实现你的这个想法。现在打开你的终端，进入到Telescope的目录，输入：
 ```

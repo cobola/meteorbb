@@ -34,11 +34,12 @@ meteorbb 就是这么一个
 通过做这个，一方面可以大家一块来学习 meteor的开发 同时也可以作为一个社区（论坛）的载体，来给大家提供一个讨论交流的地方
 
 
-#补充
+# 注意
+* meteorbb 是尝试在[Telescope](https://github.com/TelescopeJS/Telescope)的基础上做二次开发。
 
-* 看到有一个  meteor-bbs 开源的 2年前做的 可以借鉴参考
+* 看到有一个  meteor-bbs 开源的 2年前做的 可以借鉴参考。
 
-* meteorbb 是用来致敬 Nodebb的
+* meteorbb 是用来致敬 Nodebb的。
 
 
 #体验一下 <http://www.meteorbb.com>
