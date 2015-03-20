@@ -1,6 +1,6 @@
 'use strict';
 
-can = {};
+var can = {};
 
 // Permissions
 

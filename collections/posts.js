@@ -198,8 +198,7 @@ getPostProperties = function (post) {
     postAuthorName : getDisplayName(postAuthor),
     postTitle : cleanUp(post.title),
     profileUrl: getProfileUrlBySlugOrId(post.userId),
-    postUrl: getPostPageUrl(post),
-    thumbnailUrl: post.thumbnailUrl
+    postUrl: getPostPageUrl(post)
   };
 
 
@@ -354,7 +353,6 @@ Meteor.methods({
     // URL
     // body
     // categories
-    // thumbnailUrl
 
     // NOTE: the current user and the post author user might be two different users!
     var user = Meteor.user(),
