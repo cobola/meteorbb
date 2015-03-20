@@ -1,12 +1,89 @@
 # Meteor packages used by this project, one per line.
-# Check this file (and the other files in this directory) into your repository.
 #
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-meteor-platform
-insecure
-less
-iron:router@0.9.4
+# Meteor Packages
+
+standard-app-packages
+backbone
+accounts-base
 accounts-password
-twbs:bootstrap
+accounts-twitter
+spiderable
+email
+accounts-facebook
+service-configuration
+accounts-ui
+reactive-var
+http
+
+# Atmosphere Packages
+
+iron:router
+
+meteorhacks:fast-render
+meteorhacks:subs-manager
+meteorhacks:npm
+
+aldeed:autoform@5.0.0
+aldeed:collection2
+aldeed:simple-schema
+
+mrt:jquery-hotkeys
+mrt:cookies
+
+ccan:cssreset # CSS reset (Must come before any other css)
+cmather:handlebars-server
+sacha:spin
+sacha:juice
+chuangbo:marked
+percolatestudio:synced-cron
+npm-container
+matb33:collection-hooks
+djedi:sanitize-html
+rajit:bootstrap3-datepicker
+bengott:avatar
+jparker:gravatar
+tap:i18n
+useraccounts:unstyled@1.4.0
+tsega:bootstrap3-datetimepicker@3.1.3_1
+momentjs:moment
+aslagle:reactive-table
+
+# Testing
+
+# sanjo:jasmine
+# velocity:html-reporter
+
+# Telescope Packages (Required)
+
+meteorbb-base
+telescope-lib
+meteorbb-i18n
+
+# Telescope Packages (Optional)
+
+telescope-datetimepicker
+telescope-theme-base
+telescope-module-share
+telescope-api
+telescope-rss
+meteorbb-search
+telescope-tags
+telescope-theme-hubble
+telescope-email
+telescope-newsletter
+telescope-daily
+telescope-update-prompt
+telescope-kadira
+telescope-notifications
+telescope-singleday
+telescope-invites
+telescope-post-by-feed
+meteorbb-releases
+meteorbb-getting-started
+telescope-subscribe-to-posts
+telescope-tagline-banner
+
+# Custom Packages
