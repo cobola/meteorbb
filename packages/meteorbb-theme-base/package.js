@@ -8,6 +8,7 @@ Package.onUse(function (api) {
     [
       // global
 
+      'lib/client/scss/global/_main.scss',
       // includes
       'lib/client/scss/includes/_breakpoints.scss',
       'lib/client/scss/includes/_colors.scss',

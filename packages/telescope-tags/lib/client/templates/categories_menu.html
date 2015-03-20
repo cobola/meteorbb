@@ -1,19 +1,22 @@
 <template name="categoriesMenu">
   {{#if hasCategories}}
-    <div class="dropdown categories-menu header-submodule">
-      <a class="categories dropdown-top-level" href="/">{{_ "categories"}}</a>
-      <div class="dropdown-menu">
-        <ul role="menu" aria-labelledby="dLabel">
-          {{#each categories}}
-            <li>
-              <a class="dropdown-sub-level" href="{{categoryLink}}">
-                <span class="category-name menu-label">{{name}}</span>
-                {{#if description}}<span class="category-description menu-description">{{description}}</span>{{/if}}
-              </a>
-            </li>
-          {{/each}}
-        </ul>
-      </div>
-    </div>
+
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{_ "categories"}} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                {{#each categories}}
+                    <li>
+                        <a class="dropdown-sub-level" href="{{categoryLink}}">
+                            <span class="category-name menu-label">{{name}}</span>
+                          {{#if description}}<span class="category-description menu-description">{{description}}</span>{{/if}}
+                        </a>
+                    </li>
+                {{/each}}
+              </ul>
+          </li>
+
+      </ul>
+
   {{/if}}
 </template>
