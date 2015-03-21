@@ -224,9 +224,11 @@
   "invite_none_left": "Invite (none left)",
   "all": "All",
   "invited": "Invited",
+  "invites": "Invites",
   "uninvited": "Uninvited",
   "filter_by": "Filter by",
   "sort_by": "Sort by",
+  "profile_url":"Profile URL",
 
   //helpers
   "sorry_you_do_not_have_access_to_this_page": "Sorry, you do not have access to this page",
