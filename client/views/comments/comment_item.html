@@ -27,7 +27,7 @@
             | <a class="edit-link" href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a>
           {{/if}}
           {{#if isAdmin}}
-            | <span>{{full_date}}</span>
+            | <span>{{formatDate createdAt 'YYYY-MM-DD hh:mm:ss'}}</span>
           {{/if}}
         </div>
         <div class="comment-main"> 

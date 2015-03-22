@@ -72,9 +72,6 @@ Template[getTemplate('comment_item')].helpers({
       return 'author-comment';
     }
   },
-  full_date: function(){
-    return this.createdAt.toString();
-  },
   childComments: function(){
     // return only child comments
     return Comments.find({parentCommentId: this._id});

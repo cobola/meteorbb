@@ -16,7 +16,7 @@
       </tr>
       <tr>
         <td>{{_ "member_since"}}:</td>
-        <td>{{createdAtFormatted}}</td>
+        <td>{{timeAgo createdAt}}</td>
       </tr>
       <tr>
         <td>{{_ "bio"}}</td>
@@ -24,7 +24,7 @@
       </tr>
       {{#if getTwitterName}}
         <tr>
-          <td>Twitter: </td>
+          <td>{{_ "twitter"}}: </td>
           <td><a href="http://twitter.com/{{getTwitterName}}">{{getTwitterName}}</a></td>
         </tr>
       {{/if}}

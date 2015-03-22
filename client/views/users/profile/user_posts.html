@@ -4,14 +4,14 @@
     <table class="table">
     <thead>
       <tr>
-        <td>Post</td>
-        <td>Created At</td>
+        <td>帖子</td>
+        <td>创建时间</td>
       </tr>
     </thead>
     {{#each posts}}
       <tr>
         <td><a href="{{pathFor route='post_page' _id=_id}}">{{title}}</a></td>
-        <td>{{formatDate createdAt "MM/DD/YYYY, HH:mm"}}</td>
+        <td>{{formatDate createdAt "YYYY-MM-DD, HH:mm:ss"}}</td>
       </tr>
     {{/each}}
     {{#if isReady}}
