@@ -1,7 +1,6 @@
 // do this better:
 setLanguage = function (language) {
   // Session.set('i18nReady', false);
-  // console.log('i18n loading… '+language)
 
   // moment
   Session.set('momentReady', false);
@@ -9,10 +8,11 @@ setLanguage = function (language) {
   if (language.toLowerCase() === "en") {
     Session.set('momentReady', true);
   } else {
+    console.log(language);
     //$.getScript("//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/" + language.toLowerCase() + ".js", function (result) {
-      moment.locale(language);
+      moment.locale(language.toLowerCase());
       Session.set('momentReady', true);
-      Session.set('momentLocale', language);
+      Session.set('momentLocale', language.toLowerCase());
       // console.log('moment loaded!')
     //});
   }

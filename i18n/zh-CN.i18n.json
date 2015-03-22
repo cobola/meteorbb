@@ -17,16 +17,18 @@
   //Main
   "new_posts": "最新提交",
   //Commments
-  "your_comment_has_been_deleted": "你的评论已经被删除",
-  "comment_": "评论",
-  "delete_comment": "删除评论",
-  "add_comment": "评论",
+  "your_comment_has_been_deleted": "你的回复已经被删除",
+  "this_comment_has_been_deleted": "回复已经被删除",
+  "comment_": "回复",
+  "comment_edit":"回复编辑",
+  "delete_comment": "删除回复",
+  "add_comment": "回复",
   "upvote": "顶",
   "downvote": "踩",
   "link": "链接",
   "edit": "编辑",
   "reply": "回复",
-  "no_comments": "暂时没有评论",
+  "no_comments": "暂时没有回复",
   //Errors
   "you_are_already_logged_in": "你已经登录",
   "sorry_this_is_a_private_site_please_sign_up_first": "对不起, 请先注册再进行后续操作",

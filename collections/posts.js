@@ -77,13 +77,6 @@ postSchemaObject = {
       omit: true
     }
   },
-  clickCount: {
-    type: Number,
-    optional: true,
-    autoform: {
-      omit: true
-    }
-  },
   baseScore: {
     type: Number,
     decimal: true,
@@ -301,7 +294,6 @@ submitPost = function (post) {
     upvotes: 0,
     downvotes: 0,
     commentCount: 0,
-    clickCount: 0,
     viewCount: 0,
     baseScore: 0,
     score: 0,

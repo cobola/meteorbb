@@ -15,10 +15,8 @@
   "my_account": "My Account",
   "view_profile": "View Profile",
   "edit_account": "Edit Account",
-
   //Main
   "new_posts": "New Posts",
-
   // Settings Schema
   "title": "Title",
   "description": "Description",
@@ -59,7 +57,6 @@
   "faviconUrl": "Favicon URL",
   "mailURL": "MailURL",
   "postsLayout": "Posts Layout",
-  
   // Settings Fieldsets
   "general": "General",
   "invites": "Invites",
@@ -71,7 +68,6 @@
   "extras": "Extras",
   "colors": "Colors",
   "integrations": "Integrations",
-
   // Settings Help Text
 
   // Post Schema
@@ -85,7 +81,6 @@
   "commentCount": "Comment Count",
   "commenters": "Commenters",
   "lastCommentedAt": "Last Commented At",
-  "clickCount": "Click Count",
   "baseScore": "Base Score",
   "upvotes": "Upvotes",
   "upvoters": "Upvoters",
@@ -98,10 +93,13 @@
   "author": "Author",
   "userId": "User",
   "sorry_we_couldnt_find_any_posts": "Sorry, we couldn't find any posts.",
-
   //Commments
   "your_comment_has_been_deleted": "Your comment has been deleted.",
+  "this_comment_has_been_deleted": "This comment has been deleted.",
+  "points": "points",
   "comment_": "Comment",
+
+  "comment_edit":"Comment edit",
   "delete_comment": "Delete Comment",
   "add_comment": "Add Comment",
   "upvote": "upvote",
@@ -111,7 +109,6 @@
   "reply": "Reply",
   "no_comments": "No comments.",
   "please_sign_in_to_reply": "Please sign in to reply",
-
   //Errors
   "you_are_already_logged_in": "You are already logged in",
   "sorry_this_is_a_private_site_please_sign_up_first": "Sorry, this is a private site. Please register first.",
@@ -122,16 +119,13 @@
   "not_found": "Not Found!",
   "were_sorry_whatever_you_were_looking_for_isnt_here": "We're sorry; whatever you were looking for isn't here..",
   "disallowed_property_detected": "Disallowed property detected",
-  
   //Notifications
   "no_notifications": "No notifications",
   "1_notification": "1 notification",
   "notifications": "notifications",
   "mark_all_as_read": "Mark all as read",
-
   // Post deleted
   "your_post_has_been_deleted": "Your post has been deleted.",
-
   // Post submit & edit
   "created": "Created",
   "title": "Title",
@@ -155,7 +149,6 @@
   "thanks_your_post_is_awaiting_approval": "Thanks, your post is awaiting approval.",
   "sorry_couldnt_find_a_title": "Sorry, couldn't find a title...",
   "please_fill_in_an_url_first": "Please fill in an URL first!",
-
   // Post item
   "share": "Share",
   "discuss": "Discuss",
@@ -171,8 +164,6 @@
   "comment": "comment",
   "comments": "comments",
   "point": "point",
-  "points": "points",
-
   //User /client/views/users/account/user_account.html
   "please_complete_your_profile_below_before_continuing": "Please complete your profile below before continuing.",
   "account": "Account",
@@ -182,13 +173,13 @@
   "bio": "Bio",
   "twitter_username": "Twitter Username",
   "github_username": "GitHub Username",
-  "site_url" : "Site URL",
+  "site_url": "Site URL",
   "password": "Password",
   "change_password": "Change Password?",
   "old_password": "Old Password",
   "new_password": "New Password",
   "email_notifications": "Email Notifications",
-  "new_users" : "New users",
+  "new_users": "New users",
   "new_posts": "New Posts",
   "comments_on_my_posts": "Comments on my posts",
   "replies_to_my_comments": "Replies to my comments",
@@ -228,8 +219,7 @@
   "uninvited": "Uninvited",
   "filter_by": "Filter by",
   "sort_by": "Sort by",
-  "profile_url":"Profile URL",
-
+  "profile_url": "Profile URL",
   //helpers
   "sorry_you_do_not_have_access_to_this_page": "Sorry, you do not have access to this page",
   "please_sign_in_first": "Please Sign In First.",
@@ -237,7 +227,6 @@
   "sorry_you_dont_have_permissions_to_add_new_items": "Sorry, you don't have permissions to add new items.",
   "sorry_you_cannot_edit_this_post": "Sorry, you cannot edit this post.",
   "sorry_you_cannot_edit_this_comment": "Sorry, you cannot edit this comment.",
-
   //Collections
   "you_need_to_login_and_be_an_admin_to_add_a_new_category": "You need to login and be an admin to add a new category.",
   "you_need_to_login_or_be_invited_to_post_new_comments": "You need to login or be invited to post new comments.",
@@ -260,7 +249,6 @@
   "your_account_has_been_approved": "Your account has been approved.",
   "welcome_to": "Welcome to ",
   "start_posting": "Start posting.",
-
   // Translation needed (found during migration to tap:i18n)
   "please_fill_in_a_title": "Please fill in a title",
   "seconds_before_posting_again": " seconds before posting again",
@@ -284,7 +272,6 @@
   "upvoted_posts": "Upvoted Posts",
   "downvoted_posts": "Downvoted Posts",
   "mark_as_read": "Mark as read",
-
   //Common
   "pending": "Pending",
   "loading": "Loading...",
@@ -295,13 +282,10 @@
   "please_log_in_to_comment": "Please log in to comment.",
   "sign_in_sign_up_with_twitter": "Register/Sign Up with Twitter",
   "load_more": "Load More",
-
   "most_popular_posts": "The most popular posts right now.",
   "newest_posts": "The newest posts.",
   "highest_ranked_posts_ever": "The all-time highest-ranked posts.",
-
   "the_profile_of": "The profile of",
-
   "posts_awaiting_moderation": "Posts awaiting moderation.",
   "future_scheduled_posts": "Future scheduled posts.",
   "users_dashboard": "Users dashboard.",

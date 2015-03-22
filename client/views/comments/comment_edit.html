@@ -1,16 +1,32 @@
 <template name="comment_edit">
-  <div class="grid submit">
-    {{#with comment}}
-    <form class="grid-block form-horizontal form-group">
-      <div class="control-group">
-        <label class="control-label">{{_ "comment_"}}</label>
-        <div class="controls comment-field" id="editor"><textarea id="body" value="" class="input-xlarge form-control">{{body}}</textarea></div>
-      </div>
-      <div class="control-group">
-        <a class="delete-link btn btn-danger" href="/comments/deleted">{{_ "delete_comment"}}</a>
-        <input type="submit" class="btn btn-primary" value="{{_ "submit"}}" title="(⌘+enter)" />
-      </div>
-    </form>
-    {{/with}}
-  </div>
+    <div class="grid submit">
+        {{#with comment}}
+            <form>
+                <div class="form-group">
+                    <label class="control-label">{{_ "comment_edit"}}</label>
+
+                    <div class="controls comment-field" id="editor"><textarea id="body" rows="8"
+                                                                              class="input-xlarge form-control richeditor">{{body}}</textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <a class="delete-link btn btn-danger left" href="/comments/deleted">{{_ "delete_comment"}}</a>
+                    <input type="submit" class="btn btn-primary right" value="{{_ "submit"}}" title="(⌘+enter)"/>
+                </div>
+            </form>
+
+            <!--<script>-->
+                <!--$(document).ready(function() {-->
+                    <!--$('.richeditor').summernote({-->
+                        <!--height: 300,   //set editable area's height-->
+                        <!--codemirror: { // codemirror options-->
+                            <!--theme: 'monokai'-->
+                        <!--}-->
+                    <!--});-->
+                <!--});-->
+            <!--</script>-->
+        {{/with}}
+    </div>
+
+
 </template>
