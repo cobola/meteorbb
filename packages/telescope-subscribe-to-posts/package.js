@@ -18,7 +18,7 @@ Package.onUse(function (api) {
     'telescope-lib',
     'meteorbb-i18n',
     'fourseven:scss',
-    'telescope-notifications'
+    'meteorbb-notifications'
   ]);
 
   // client

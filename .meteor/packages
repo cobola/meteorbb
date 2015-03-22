@@ -61,21 +61,20 @@ meteorbb-i18n
 
 # Telescope Packages (Optional)
 
-telescope-datetimepicker
+meteorbb-datetimepicker
 telescope-module-share
 telescope-api
-telescope-rss
+meteorbb-rss
 meteorbb-search
 telescope-tags
-telescope-email
+meteorbb-email
 telescope-newsletter
 telescope-daily
 telescope-update-prompt
 telescope-kadira
-telescope-notifications
+meteorbb-notifications
 telescope-singleday
 telescope-invites
-telescope-post-by-feed
 meteorbb-releases
 meteorbb-getting-started
 telescope-subscribe-to-posts
@@ -89,3 +88,4 @@ useraccounts:bootstrap
 softwarerero:accounts-t9n
 accounts-github
 twbs:bootstrap
+manuelschoebel:ms-seo

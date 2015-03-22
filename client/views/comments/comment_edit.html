@@ -6,9 +6,9 @@
         <label class="control-label">{{_ "comment_"}}</label>
         <div class="controls comment-field" id="editor"><textarea id="body" value="" class="input-xlarge form-control">{{body}}</textarea></div>
       </div>
-      <div class="form-actions">
-        <a class="delete-link" href="/comments/deleted">{{_ "delete_comment"}}</a>
-        <input type="submit" class="button" value="{{_ "submit"}}" title="(⌘+enter)" />
+      <div class="control-group">
+        <a class="delete-link btn btn-danger" href="/comments/deleted">{{_ "delete_comment"}}</a>
+        <input type="submit" class="btn btn-primary" value="{{_ "submit"}}" title="(⌘+enter)" />
       </div>
     </form>
     {{/with}}

@@ -139,6 +139,8 @@
   "github_username": "GitHub用户名",
   "profile_url": "个人资料",
 
+  "postedAt": "创建时间",
+
   "you_ve_been_signed_out": "你已经注销了，下次再来哦！",
 
   //helpers
