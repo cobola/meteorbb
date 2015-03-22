@@ -1,0 +1,14 @@
+<template name="RichEditor">
+<textarea  {{atts}} >{{value}}</textarea>
+
+    <script>
+        $(document).ready(function() {
+            $('.richeditor').summernote({
+                height: 300,   //set editable area's height
+                codemirror: { // codemirror options
+                    theme: 'monokai'
+                }
+            });
+        });
+    </script>
+</template>

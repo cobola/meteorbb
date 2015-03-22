@@ -62,6 +62,7 @@ meteorbb-i18n
 # Telescope Packages (Optional)
 
 meteorbb-datetimepicker
+meteorbb-richeditor
 telescope-module-share
 telescope-api
 meteorbb-rss
@@ -89,3 +90,6 @@ softwarerero:accounts-t9n
 accounts-github
 twbs:bootstrap
 manuelschoebel:ms-seo
+markdown
+jeremy:ghostdown
+summernote:summernote

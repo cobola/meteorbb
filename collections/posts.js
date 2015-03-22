@@ -38,7 +38,8 @@ postSchemaObject = {
     optional: true,
     autoform: {
       editable: true,
-      rows: 5
+      rows:8,
+      type:"meteorbb-richeditor"
     }
   },
   htmlBody: {

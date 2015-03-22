@@ -31,6 +31,7 @@ djedi:sanitize-html@1.6.1
 ejson@1.0.6
 email@1.0.6
 fastclick@1.0.3
+fortawesome:fontawesome@4.2.0
 fourseven:scss@1.0.0
 geojson-utils@1.0.3
 github@1.1.3
@@ -47,6 +48,7 @@ iron:location@1.0.7
 iron:middleware-stack@1.0.7
 iron:router@1.0.7
 iron:url@1.0.7
+jeremy:ghostdown@0.3.1
 jparker:crypto-core@0.1.0
 jparker:crypto-md5@0.1.1
 jparker:gravatar@0.3.1
@@ -60,6 +62,7 @@ livedata@1.0.13
 localstorage@1.0.3
 logging@1.0.7
 manuelschoebel:ms-seo@0.4.1
+markdown@1.0.4
 matb33:collection-hooks@0.7.11
 meteor@1.1.5
 meteor-platform@1.2.2
@@ -70,6 +73,8 @@ meteorbb-getting-started@0.1.0
 meteorbb-i18n@0.0.0
 meteorbb-notifications@0.1.0
 meteorbb-releases@0.1.0
+meteorbb-richeditor@1.0.3
+meteorbb-rss@0.0.0
 meteorbb-search@0.0.0
 meteorbb-theme-base@0.0.0
 meteorbb-theme-hubble@0.0.0
@@ -116,6 +121,7 @@ spiderable@1.0.7
 srp@1.0.3
 standard-app-packages@1.0.5
 stylus@1.0.7
+summernote:summernote@0.6.0_1
 tap:i18n@1.4.1
 telescope-api@0.0.0
 telescope-daily@0.0.0
@@ -124,7 +130,6 @@ telescope-kadira@0.1.0
 telescope-lib@0.2.9
 telescope-module-share@0.0.0
 telescope-newsletter@0.1.0
-meteorbb-rss@0.0.0
 telescope-singleday@0.1.0
 telescope-subscribe-to-posts@0.1.0
 telescope-tagline-banner@0.1.0
