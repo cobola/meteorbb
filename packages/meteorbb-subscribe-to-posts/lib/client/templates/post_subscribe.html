@@ -2,12 +2,12 @@
   {{#if canSubscribe}}
     <div class="post-subscribe module grid-block">
       {{#if subscribed}}
-        <a class="unsubscribe-link" href="#">
-          <span>{{_ 'unsubscribe_from_thread'}}</span>
+        <a class="unsubscribe-link btn btn-block" href="#">
+          {{_ 'unsubscribe_from_thread'}}
         </a>
       {{else}}
-        <a class="subscribe-link" href="#">
-          <span>{{_ 'subscribe_to_thread'}}</span>
+        <a class="subscribe-link btn btn-block" href="#">
+          {{_ 'subscribe_to_thread'}}
         </a>
       {{/if}}
     </div>
