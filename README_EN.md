@@ -1,16 +1,15 @@
-# INTRODUCE
-MeteorBB is based on [Telescope](https://github.com/TelescopeJS/Telescope),We find the great feature and wel-formed code .MeteorBB will keep the most feature of Telescope , and keep friendly to chinese developer and users.
+# Intruduction
+MeteorBB is based on [Telescope](https://github.com/TelescopeJS/Telescope), a well-formed code for forum with awesome fetures. Keeping friendly to chinese developer and users, MeteorBB will retain most features of Telescope and do some further development.
 
 
-# WHAT'S MEAN OF MeteorBB
+# Why We Name It MeteorBB
 
-MeteorBB is a tribute to NodeBB ,but now our slogan is ** No Meteor No BB **  ,cool!
+In honor of NodeBB, MeteorBB's slogan is ** No Meteor No BB ** , coooooool!
 
 
+## Issue
 
-## ISSUE
-
-MeteorBB is developing ,Any contribute is welcome, you can post question and issue at [issues](https://github.com/cobola/meteorbb/issues),if you want involved the code,please contact me [cobola](cobola@gmail.com)
+MeteorBB is still being developed. We delightly appriciate any contribution from you. You can post any question and any issue at [issues](https://github.com/cobola/meteorbb/issues). If you want to get involved into our code, contact us [cobola](cobola@gmail.com) anytime!
 
 
 
