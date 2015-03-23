@@ -8,7 +8,6 @@ setLanguage = function (language) {
   if (language.toLowerCase() === "en") {
     Session.set('momentReady', true);
   } else {
-    console.log(language);
     //$.getScript("//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/" + language.toLowerCase() + ".js", function (result) {
       moment.locale(language.toLowerCase(),{
         meridiem : function (hour, minute, isLowercase) {

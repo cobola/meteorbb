@@ -22,10 +22,13 @@ Meteor.startup(function () {
   });
 
   Template[getTemplate('search')].events({
-    'keyup, search .search-field': function(e){
+    'click, #sbtn': function(e){
       e.preventDefault();
-      var val = $(e.target).val(),
+
+      //if (window.event.keyCode == 13 ) return;
+      var val = $('#search').val(),
           $search = $('.search');
+      //console.log('ggo '+val);
       if (val === '') {
         // if search field is empty, just do nothing and show an empty template
         $search.addClass('empty');
