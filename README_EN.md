@@ -15,7 +15,7 @@ MeteorBB is developing ,Any contribute is welcome, you can post question and iss
 
 
 
-## DEMO [www.meteorbb.com](https/meteorbb.meteor.com)
+## DEMO [www.meteorbb.com](https://meteorbb.meteor.com)
 
 
 
