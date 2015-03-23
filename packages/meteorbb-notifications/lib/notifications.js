@@ -65,7 +65,7 @@ commentAfterSubmitMethodCallbacks.push(function (comment) {
     }
 
     // 3. Notify users subscribed to the thread 
-    // TODO: ideally this would be injected from the telescope-subscribe-to-posts package
+    // TODO: ideally this would be injected from the meteorbb-subscribe-to-posts package
     if (!!post.subscribers) {
 
       // remove userIds of users that have already been notified

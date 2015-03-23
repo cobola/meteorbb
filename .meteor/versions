@@ -76,6 +76,7 @@ meteorbb-releases@0.1.0
 meteorbb-richeditor@1.0.3
 meteorbb-rss@0.0.0
 meteorbb-search@0.0.0
+meteorbb-subscribe-to-posts@0.1.0
 meteorbb-theme-base@0.0.0
 meteorbb-theme-hubble@0.0.0
 meteorhacks:async@1.0.0
@@ -131,7 +132,6 @@ telescope-lib@0.2.9
 telescope-module-share@0.0.0
 telescope-newsletter@0.1.0
 telescope-singleday@0.1.0
-telescope-subscribe-to-posts@0.1.0
 telescope-tagline-banner@0.1.0
 telescope-tags@0.0.0
 telescope-update-prompt@0.1.0

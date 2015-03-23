@@ -1,7 +1,7 @@
 Package.describe({
   summary: 'Subscribe to posts to be notified when they get new comments',
   version: '0.1.0',
-  name: 'telescope-subscribe-to-posts'
+  name: 'meteorbb-subscribe-to-posts'
 });
 
 
