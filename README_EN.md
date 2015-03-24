@@ -4,7 +4,7 @@ MeteorBB is based on [Telescope](https://github.com/TelescopeJS/Telescope), a we
 
 # Why We Name It MeteorBB
 
-In honor of NodeBB, MeteorBB's slogan is ** No Meteor No BB ** , coooooool!
+In honor of NodeBB, MeteorBB's slogan is ` No Meteor No BB ` , coooooool!
 
 
 ## Issue
