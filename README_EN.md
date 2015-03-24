@@ -9,7 +9,7 @@ In honor of NodeBB, MeteorBB's slogan is ` No Meteor No BB ` , coooooool!
 
 ## Issue
 
-MeteorBB is still being developed. We delightly appriciate any contribution from you. You can post any question and any issue at [issues](https://github.com/cobola/meteorbb/issues). If you want to get involved into our code, contact us [cobola](cobola@gmail.com) anytime!
+MeteorBB is still being developed. We delightly appriciate any contribution from you. You can post any question and any issue at [issues](https://github.com/cobola/meteorbb/issues). If you want to get involved into our code, just fork it!
 
 
 
