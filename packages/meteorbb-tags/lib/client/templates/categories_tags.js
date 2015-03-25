@@ -1,7 +1,6 @@
 Meteor.startup(function () {
   Template[getTemplate('categoriesTags')].helpers({
     hasCategories: function(){
-      console.log('aaa');
       return typeof Categories !== 'undefined' && Categories.find().count();
     },
     cat: function () {

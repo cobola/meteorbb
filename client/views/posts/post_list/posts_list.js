@@ -39,5 +39,8 @@ Template[getTemplate('posts_list')].helpers({
   },
   cats:function(){
     return getTemplate('categoriesTags');
+  },
+  user:function(){
+    return getTemplate('userInfo')
   }
 });

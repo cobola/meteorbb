@@ -192,10 +192,10 @@ postModules = [
     template: 'postRank',
     order: 1
   },
-  {
-    template: 'postUpvote',
-    order: 10
-  },
+  //{
+  //  template: 'postUpvote',
+  //  order: 10
+  //},
   {
     template: 'postContent',
     order: 20
