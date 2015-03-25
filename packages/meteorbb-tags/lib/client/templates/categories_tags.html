@@ -1,0 +1,19 @@
+<template name="categoriesTags">
+    {{#if hasCategories}}
+
+        <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading"> {{_ "categories"}}</div>
+            <div class="panel-body">
+                {{#each categories}}
+                    <a class="label label-info" href="{{categoryLink}}">{{name}}
+                    </a> &nbsp;
+
+                {{/each}}
+            </div>
+        </div>
+        </div>
+
+
+    {{/if}}
+</template>

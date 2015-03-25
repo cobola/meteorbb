@@ -1,18 +1,19 @@
 <template name="layout">
 
-{{> UI.dynamic template=css}}
-  <div class=" {{currentPage}}" style="background: #dfdfdf">
-      {{> UI.dynamic template=nav}}
-      <div class="container">
+    {{> UI.dynamic template=css}}
+    <div class=" {{currentPage}}" style="background: #dfdfdf">
+        {{> UI.dynamic template=nav}}
+
+
         {{> UI.dynamic template=messages}}
         {{#each heroModules}}
-          {{> UI.dynamic template=getTemplate}}
+            {{> UI.dynamic template=getTemplate}}
         {{/each}}
         {{> yield}}
         {{> UI.dynamic template=footer}}
-      </div>
-      <div class="overlay hidden"></div>
+    </div>
+    <div class="overlay hidden"></div>
 
     {{{extraCode}}}
-  </div>
+
 </template>

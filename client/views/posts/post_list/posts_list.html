@@ -1,5 +1,8 @@
 <template name="posts_list">
-  <div class="posts-wrapper grid grid-module">
+
+  {{> UI.dynamic template=cats}}
+
+    <div class="container posts-wrapper grid grid-module">
 
     {{> UI.dynamic template=postsListIncoming data=incoming}}
 

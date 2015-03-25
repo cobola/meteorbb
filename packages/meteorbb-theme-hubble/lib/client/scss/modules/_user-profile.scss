@@ -6,3 +6,14 @@
 		border-radius: 80px;
 	}
 }
+
+.menu-label{
+  display: block;
+}
+.menu-description{
+  display: block;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 2px;
+  color: $medium-text;
+}

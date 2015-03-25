@@ -1,7 +1,7 @@
 Package.describe({
   summary: 'Telescope Single Day package',
   version: '0.1.0',
-  name: 'telescope-singleday'
+  name: 'meteorbb-singleday'
 });
 
 Npm.depends({

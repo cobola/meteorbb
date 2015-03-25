@@ -145,6 +145,11 @@
 
   "you_ve_been_signed_out": "你已经注销了，下次再来哦！",
 
+  "users_dashboard": "用户管理面板",
+
+  "meteorbb_settings_panel":"MeteorBB设置面板",
+
+
   //helpers
   "sorry_you_do_not_have_access_to_this_page": "抱歉你没有权限访问此页面",
   "please_sign_in_first": "请先登录.",

@@ -1,6 +1,4 @@
 accounts-base@1.2.0
-accounts-github@1.0.4
-accounts-oauth@1.1.4
 accounts-password@1.1.0
 accounts-ui@1.1.5
 accounts-ui-unstyled@1.1.7
@@ -34,7 +32,6 @@ fastclick@1.0.3
 fortawesome:fontawesome@4.2.0
 fourseven:scss@1.0.0
 geojson-utils@1.0.3
-github@1.1.3
 handlebars@1.0.3
 html-tools@1.0.4
 htmljs@1.0.4
@@ -98,8 +95,6 @@ mrt:cookies@0.3.0
 mrt:jquery-hotkeys@0.0.1
 npm-bcrypt@0.7.8_1
 npm-container@1.0.0
-oauth@1.1.4
-oauth2@1.1.3
 observe-sequence@1.0.5
 ordered-dict@1.0.3
 percolatestudio:synced-cron@1.1.0
@@ -125,15 +120,15 @@ stylus@1.0.7
 summernote:summernote@0.6.0_1
 tap:i18n@1.4.1
 telescope-api@0.0.0
-telescope-daily@0.0.0
+meteorbb-daily@0.0.0
 telescope-invites@0.1.0
 telescope-kadira@0.1.0
 telescope-lib@0.2.9
 telescope-module-share@0.0.0
 telescope-newsletter@0.1.0
-telescope-singleday@0.1.0
+meteorbb-singleday@0.1.0
 telescope-tagline-banner@0.1.0
-telescope-tags@0.0.0
+meteorbb-tags@0.0.0
 telescope-update-prompt@0.1.0
 templating@1.1.0
 tracker@1.0.6

@@ -65,23 +65,23 @@ secondaryNav = [
 adminMenu = [
   {
     route: 'posts_pending',
-    label: 'Pending',
-    description: 'posts_awaiting_moderation'
+    label: '等待审核',
+    description: '等待审核的帖子'
   },
   {
     route: 'posts_scheduled',
-    label: 'Scheduled',
-    description: 'future_scheduled_posts'
+    label: '计划',
+    description: '计划中的帖子'
   },
   {
     route: 'all-users',
-    label: 'Users',
+    label: '用户管理',
     description: 'users_dashboard'
   },
   {
     route: 'settings',
-    label: 'Settings',
-    description: 'telescope_settings_panel'
+    label: '设置',
+    description: 'meteorbb_settings_panel'
   }
 ];
 

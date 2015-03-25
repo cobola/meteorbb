@@ -9,7 +9,7 @@ Package.onUse(function (api) {
     'meteorhacks:fast-render', 
     'meteorhacks:subs-manager',
     'tap:i18n',
-    'telescope-singleday',
+    'meteorbb-singleday',
     'fourseven:scss'
   ], ['client', 'server']);
 

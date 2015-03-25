@@ -67,14 +67,14 @@ telescope-module-share
 telescope-api
 meteorbb-rss
 meteorbb-search
-telescope-tags
+meteorbb-tags
 meteorbb-email
 telescope-newsletter
-telescope-daily
+meteorbb-daily
 telescope-update-prompt
 telescope-kadira
 meteorbb-notifications
-telescope-singleday
+meteorbb-singleday
 telescope-invites
 meteorbb-releases
 meteorbb-getting-started
@@ -87,7 +87,6 @@ meteorbb-theme-hubble
 # Custom Packages
 useraccounts:bootstrap
 softwarerero:accounts-t9n
-accounts-github
 twbs:bootstrap
 manuelschoebel:ms-seo
 markdown

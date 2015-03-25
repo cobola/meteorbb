@@ -1,6 +1,6 @@
 adminMenu.push({
   route: 'categories',
-  label: 'Categories',
+  label: 'categories',
   description: 'add_and_remove_categories'
 });
 
@@ -11,10 +11,10 @@ postHeading.push({
 });
   
 // push "categoriesMenu" template to primaryNav
-primaryNav.push({
-  template: 'categoriesMenu',
-  order: 50
-});
+//primaryNav.push({
+//  template: 'categoriesMenu',
+//  order: 50
+//});
 
 // we want to wait until categories are all loaded to load the rest of the app
 preloadSubscriptions.push('categories');
