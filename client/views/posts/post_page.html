@@ -1,12 +1,31 @@
 <template name="post_page">
-  <div class="single-post grid">
-    <div class="posts posts-list">
-      {{> UI.dynamic template=post_item}}
+
+    <div class="container" >
+        <div class="col-md-9" style="background: #fff">
+
+
+            <div class="posts posts-list">
+                {{> UI.dynamic template=post_item}}
+            </div>
+            {{#if body}}
+                {{> UI.dynamic template=post_body}}
+            {{/if}}
+            {{> UI.dynamic template=comment_form}}
+            {{> UI.dynamic template=comment_list}}
+        </div>
+        <div class="col-md-3">
+
+            <!--<div class="panel panel-default">-->
+            <!--<div class="panel-body">-->
+            <!--{{> UI.dynamic template=user}}-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    领取今日奖励！
+                </div>
+            </div>
+        </div>
     </div>
-    {{#if body}}
-      {{> UI.dynamic template=post_body}}
-    {{/if}}
-    {{> UI.dynamic template=comment_form}}
-    {{> UI.dynamic template=comment_list}}
-  </div>
 </template>
