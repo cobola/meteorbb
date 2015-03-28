@@ -16,7 +16,7 @@ categorySchema = new SimpleSchema({
   },
   slug: {
     type: String,
-    optional: true,
+    optional: false,
     autoform: {
     }
   }

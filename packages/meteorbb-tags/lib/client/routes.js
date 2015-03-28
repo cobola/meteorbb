@@ -12,7 +12,7 @@ Meteor.startup(function () {
 
     getTitle: function () {
       var category = this.getCurrentCategory();
-      return category.name + ' - ' + getSetting('title', 'Telescope');
+      return category.name + ' - ' + getSetting('title', 'MeteorBB');
     },
 
     getDescription: function () {

@@ -144,7 +144,7 @@ postSchemaObject = {
     defaultValue: false,
     autoform: {
       group: 'admin',
-      leftLabel: "Sticky"
+      leftLabel: "置顶"
     }
   },
   inactive: {
