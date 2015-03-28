@@ -33,17 +33,83 @@
         </div>
         <div class="col-md-3">
 
-            <!--<div class="panel panel-default">-->
-                <!--<div class="panel-body">-->
-                    <!--{{> UI.dynamic template=user}}-->
-
-                <!--</div>-->
-            <!--</div>-->
             <div class="panel panel-default">
                 <div class="panel-body">
-                    No Meteor,No BB！
+
+
+                    {{#if isLoggedIn}}
+
+
+                        <table class="table">
+                            <tr>
+                                <td width="100px;" valign="top">
+
+                                    {{> avatar user=user size="large" shape="circle"}}
+
+                                </td>
+                                <td width="0px;" valign="top"></td>
+                                <td valign="top"><span class="bold">
+                                    {{user.username}}</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <table class="table">
+                            <tr class="text-center">
+                                <td width="30%">
+                                    <p>1</p>
+
+                                    <p>收藏</p>
+                                </td>
+                                <td width="30%">
+                                    <p>2</p>
+
+                                    <p>帖子</p>
+                                </td>
+                                <td>
+                                    <p>3</p>
+
+                                    <p>评论</p>
+                                </td>
+
+                            </tr>
+                        </table>
+                        <a href="/submit">
+                            <button type="button" class="btn btn-info btn-block"> 发表</button>
+                        </a>
+
+                    {{else}}
+                        <p>MeteorBB：全宇宙最大的Meteor中文开源社区。</p>
+                        您可以
+                        <a class="btn btn-xs btn-danger" href="{{pathFor route='atSignUp'}}">{{_ "sign_up"}}</a>
+                        或者
+                        <a class="btn btn-xs btn-info" href="{{pathFor route='atSignIn'}}">{{_ "sign_in"}}</a>。
+
+
+
+                    {{/if}}
+
                 </div>
             </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">没人回复的话题</div>
+
+
+                <ul class="list-group">
+                    {{#each postsNoReply}}
+
+                        <li class="list-group-item">
+                            {{> UI.dynamic template=postTitle}}
+                        </li>
+                    {{/each}}
+                </ul>
+
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">积分榜</div>
+
+
+            </div>
+
         </div>
 
     </div>

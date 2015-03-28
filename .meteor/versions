@@ -23,6 +23,7 @@ chuangbo:cookie@1.1.0
 chuangbo:marked@0.3.5
 cmather:handlebars-server@2.0.0
 coffeescript@1.0.6
+dburles:mongo-collection-instances@0.2.6
 ddp@1.1.0
 deps@1.0.7
 djedi:sanitize-html@1.6.1
@@ -33,6 +34,7 @@ fortawesome:fontawesome@4.2.0
 fourseven:scss@1.0.0
 geojson-utils@1.0.3
 handlebars@1.0.3
+houston:admin@2.0.3
 html-tools@1.0.4
 htmljs@1.0.4
 http@1.1.0
@@ -69,6 +71,8 @@ meteorbb-datetimepicker@1.0.3
 meteorbb-email@0.2.9
 meteorbb-getting-started@0.1.0
 meteorbb-i18n@0.0.0
+meteorbb-invites@0.1.0
+meteorbb-kadira@0.1.0
 meteorbb-notifications@0.1.0
 meteorbb-releases@0.1.0
 meteorbb-richeditor@1.0.3
@@ -123,14 +127,13 @@ stylus@1.0.7
 summernote:summernote@0.6.0_1
 tap:i18n@1.4.1
 telescope-api@0.0.0
-telescope-invites@0.1.0
-telescope-kadira@0.1.0
 telescope-lib@0.2.9
 telescope-module-share@0.0.0
 telescope-newsletter@0.1.0
 telescope-tagline-banner@0.1.0
 telescope-update-prompt@0.1.0
 templating@1.1.0
+tmeasday:paginated-subscription@0.2.4
 tracker@1.0.6
 tsega:bootstrap3-datetimepicker@3.1.3_3
 twbs:bootstrap@3.3.4

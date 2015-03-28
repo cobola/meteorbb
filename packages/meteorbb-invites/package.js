@@ -1,7 +1,7 @@
 Package.describe({
   summary: 'Telescope invites package',
   version: '0.1.0',
-  name: 'telescope-invites'
+  name: 'meteorbb-invites'
 });
 
 Npm.depends({

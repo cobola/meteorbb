@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Telescope Kadira package",
   version: '0.1.0',
-  name: "telescope-kadira"
+  name: "meteorbb-kadira"
 });
 
 Package.onUse(function (api) {

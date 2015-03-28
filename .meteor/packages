@@ -72,10 +72,10 @@ meteorbb-email
 telescope-newsletter
 meteorbb-daily
 telescope-update-prompt
-telescope-kadira
+meteorbb-kadira
 meteorbb-notifications
 meteorbb-singleday
-telescope-invites
+meteorbb-invites
 meteorbb-releases
 meteorbb-getting-started
 meteorbb-subscribe-to-posts
@@ -92,3 +92,4 @@ manuelschoebel:ms-seo
 markdown
 jeremy:ghostdown
 summernote:summernote
+houston:admin
