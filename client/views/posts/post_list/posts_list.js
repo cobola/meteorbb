@@ -51,6 +51,12 @@ Template[getTemplate('posts_list')].helpers({
     },
     postTitle: function () {
         return getTemplate('postTitle');
+    },
+    userList:function(){
+
+    },
+    submitButton: function () {
+        return getTemplate('submitButton')
     }
 
 

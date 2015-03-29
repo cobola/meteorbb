@@ -1,5 +1,7 @@
 <template name="submitButton">
-  {{#if canPost}}
-      <a  id="submit" class="text-red" href="/submit">{{_ "post"}}</a>
-  {{/if}}
+    {{#if canPost}}
+        <a href="/submit">
+            <button type="button" class="btn btn-info btn-block"> {{_ "post"}}</button>
+        </a>
+    {{/if}}
 </template>

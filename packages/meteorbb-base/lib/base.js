@@ -54,10 +54,6 @@ secondaryNav = [
   {
     template:'notificationsMenu',
     order: 20
-  },
-  {
-    template: 'submitButton',
-    order: 30
   }
 ];
 

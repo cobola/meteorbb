@@ -12,12 +12,10 @@
         </li>
 
     </ul>
-
   {{else}}
       <ul class="nav navbar-nav navbar-right">
-          <li><a class="account-link sign-in" href="{{pathFor route='atSignUp'}}">{{_ "sign_up"}}</a></li>
-          <li><a class="account-link sign-up" href="{{pathFor route='atSignIn'}}">{{_ "sign_in"}}</a></li>
-
+          <li><a  href="{{pathFor route='atSignUp'}}">{{_ "sign_up"}}</a></li>
+          <li><a   href="{{pathFor route='atSignIn'}}">{{_ "sign_in"}}</a></li>
       </ul>
 
   {{/if}}

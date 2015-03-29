@@ -86,6 +86,8 @@
   "point": "点击",
   "points": "点击数",
   "sticky": "置顶",
+
+  "please_log_in_to_comment": "登录后就可以回复了.",
   //User
   "please_complete_your_profile_below_before_continuing": "在继续之前请填写相关资料.",
   "account": "帐号",
