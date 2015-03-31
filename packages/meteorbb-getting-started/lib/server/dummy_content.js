@@ -12,8 +12,6 @@ var createPost = function (slug, postedAt, username, thumbnail) {
     userId: Meteor.users.findOne({username: username})._id
   }
 
-  if (typeof thumbnail !== "undefined")
-    post.thumbnailUrl = "/packages/meteorbb-getting-started/content/images/" + thumbnail
 
   submitPost(post);
 }

@@ -12,7 +12,7 @@ Package.onUse(function (api) {
 
   api.use([
     'iron:router',
-    'telescope-base',
+    'meteorbb-base',
     'telescope-lib',
     'meteorbb-i18n',
     'tap:i18n'

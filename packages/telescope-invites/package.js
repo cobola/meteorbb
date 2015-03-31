@@ -17,7 +17,7 @@ Package.onUse(function (api) {
   api.use([
     'tap:i18n',
     'iron:router',
-    'telescope-base',
+    'meteorbb-base',
     'telescope-lib',
     'meteorbb-i18n',
     'aldeed:simple-schema',

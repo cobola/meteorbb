@@ -5,7 +5,7 @@ Package.onUse(function (api) {
   api.use(
     [
       'telescope-lib',
-      'telescope-base',
+      'meteorbb-base',
       'fourseven:scss'
     ],
     ['client', 'server']

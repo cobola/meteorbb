@@ -13,7 +13,7 @@ Npm.depends({
 Package.onUse(function(api) {
 
   api.use([
-    'telescope-base', 
+    'meteorbb-base',
     'telescope-tags',
     'aldeed:simple-schema',
     'aldeed:autoform',

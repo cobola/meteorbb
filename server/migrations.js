@@ -250,16 +250,16 @@ var migrationsList = {
     });
     return i;
   },
-  submittedToPostedAt: function () {
-    var i = 0;
-    Posts.find({postedAt: {$exists : false}}).forEach(function (post) {
-      i++;
-      console.log("Post: "+post._id);
-      Posts.update(post._id, { $rename: { 'submitted': 'postedAt'}}, {multi: true, validate: false});
-      console.log("---------------------");
-    });
-    return i;
-  },
+  //submittedToPostedAt: function () {
+  //  var i = 0;
+  //  Posts.find({postedAt: {$exists : false}}).forEach(function (post) {
+  //    i++;
+  //    console.log("Post: "+post._id);
+  //    //Posts.update(post._id, { $rename: { 'submitted': 'postedAt'}}, {multi: true, validate: false});
+  //    console.log("---------------------");
+  //  });
+  //  return i;
+  //},
   addPostedAtToComments: function () {
     var i = 0;
     Comments.find({postedAt: {$exists : false}}).forEach(function (comment) {
@@ -437,18 +437,8 @@ var migrationsList = {
       Releases.update({number:'0.11.2'}, {$set: {read:false}});
     }
     return i;
-  },
-  removeThumbnailHTTP: function () {
-    var i = 0;
-    Posts.find({thumbnailUrl: {$exists : true}}).forEach(function (post) {
-      i++;
-      var newThumbnailUrl = post.thumbnailUrl.replace("http:", "");
-      console.log("Post: "+post._id);
-      Posts.update(post._id, { $set: { 'thumbnailUrl': newThumbnailUrl}}, {multi: true, validate: false});
-      console.log("---------------------");
-    });
-    return i;
   }
+
 };
 
 // TODO: normalize categories?

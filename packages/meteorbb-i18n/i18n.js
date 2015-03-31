@@ -9,12 +9,12 @@ setLanguage = function (language) {
   if (language.toLowerCase() === "en") {
     Session.set('momentReady', true);
   } else {
-    $.getScript("//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/" + language.toLowerCase() + ".js", function (result) {
+    //$.getScript("//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/lang/" + language.toLowerCase() + ".js", function (result) {
       moment.locale(language);
       Session.set('momentReady', true);
       Session.set('momentLocale', language);
       // console.log('moment loaded!')
-    });
+    //});
   }
 
   // TAPi18n

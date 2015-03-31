@@ -12,7 +12,7 @@ Package.onUse(function (api) {
 
   api.use([
     'telescope-lib',
-    'telescope-base',
+    'meteorbb-base',
     'aldeed:simple-schema',
     'iron:router',
     'miro:mailchimp',

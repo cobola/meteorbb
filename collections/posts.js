@@ -198,13 +198,9 @@ getPostProperties = function (post) {
     postAuthorName : getDisplayName(postAuthor),
     postTitle : cleanUp(post.title),
     profileUrl: getProfileUrlBySlugOrId(post.userId),
-    postUrl: getPostPageUrl(post),
-    thumbnailUrl: post.thumbnailUrl,
-    linkUrl: !!post.url ? getOutgoingUrl(post.url) : getPostPageUrl(post._id)
+    postUrl: getPostPageUrl(post)
   };
 
-  if(post.url)
-    p.url = post.url;
 
   if(post.htmlBody)
     p.htmlBody = post.htmlBody;
@@ -234,23 +230,9 @@ getPostEditUrl = function(id){
 
 // for a given post, return its link if it has one, or else its post page URL
 getPostLink = function (post) {
-  return !!post.url ? getOutgoingUrl(post.url) : getPostPageUrl(post);
+  return getPostPageUrl(post);
 };
 
-// we need the current user so we know who to upvote the existing post as
-checkForPostsWithSameUrl = function (url, currentUser) {
-
-  // check that there are no previous posts with the same link in the past 6 months
-  var sixMonthsAgo = moment().subtract(6, 'months').toDate();
-  var postWithSameLink = Posts.findOne({url: url, postedAt: {$gte: sixMonthsAgo}});
-
-  if(typeof postWithSameLink !== 'undefined'){
-    upvoteItem(Posts, postWithSameLink, currentUser);
-
-    // note: error.details returns undefined on the client, so add post ID to reason
-    throw new Meteor.Error('603', i18n.t('this_link_has_already_been_posted') + '|' + postWithSameLink._id, postWithSameLink._id);
-  }
-}
 
 // when on a post page, return the current post
 currentPost = function () {
@@ -301,9 +283,6 @@ submitPost = function (post) {
   if(!post.title)
     throw new Meteor.Error(602, i18n.t('please_fill_in_a_title'));
 
-  // check that there are no posts with the same URL
-  if(!!post.url)
-    checkForPostsWithSameUrl(post.url, user);
 
   // ------------------------------ Properties ------------------------------ //
 
@@ -374,7 +353,6 @@ Meteor.methods({
     // URL
     // body
     // categories
-    // thumbnailUrl
 
     // NOTE: the current user and the post author user might be two different users!
     var user = Meteor.user(),

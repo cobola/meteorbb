@@ -2,7 +2,7 @@ Package.describe({summary: "Telescope share module package"});
 
 Package.onUse(function (api) {
 
-  api.use(['telescope-lib', 'telescope-base', 'fourseven:scss'], ['client', 'server']);
+  api.use(['telescope-lib', 'meteorbb-base', 'fourseven:scss'], ['client', 'server']);
 
   api.use([
     'jquery',

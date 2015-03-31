@@ -2,7 +2,7 @@ Package.describe({summary: "Telescope search package"});
 
 Package.onUse(function (api) {
 
-  api.use(['telescope-lib', 'telescope-base', 'aldeed:simple-schema'], ['client', 'server']);
+  api.use(['telescope-lib', 'meteorbb-base', 'aldeed:simple-schema'], ['client', 'server']);
 
   api.use([
     'jquery',
