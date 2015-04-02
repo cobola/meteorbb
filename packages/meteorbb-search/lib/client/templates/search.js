@@ -28,13 +28,14 @@ Meteor.startup(function () {
             //if (window.event.keyCode == 13 ) return;
             var val = $('#search').val(),
                 $search = $('.search');
-            //console.log('ggo '+val);
-            if (val === '') {
-                // if search field is empty, just do nothing and show an empty template
-                $search.addClass('empty');
-                Session.set('searchQuery', '');
-                Router.go('search', null, {replaceState: true});
-            } else {
+            if (val !== '') {
+                //{
+                //    // if search field is empty, just do nothing and show an empty template
+                //    $search.addClass('empty');
+                //    Session.set('searchQuery', '');
+                //    Router.go('search', null, {replaceState: true});
+                //} else
+                //{
                 $search.removeClass('empty');
                 // if search field is not empty, add a delay to avoid firing new searches for every keystroke
                 delay(function () {

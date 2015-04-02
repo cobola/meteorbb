@@ -10,6 +10,9 @@
             {{#if body}}
                 {{> UI.dynamic template=post_body}}
             {{/if}}
+            <div class="">
+                {{> UI.dynamic template=postUpvote}}
+            </div>
             {{> UI.dynamic template=comment_form}}
             {{> UI.dynamic template=comment_list}}
         </div>
