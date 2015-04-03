@@ -423,10 +423,6 @@
 }
 
 .post-body {
-  @extend .has-shadow;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  background: white;
   padding: 20px;
   font-size: 16px;
   .list & {
