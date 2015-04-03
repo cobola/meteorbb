@@ -14,7 +14,7 @@ MeteorBB is still being developed. We delightly appriciate any contribution from
 
 
 
-## DEMO [www.meteorbb.com](https://meteorbb.meteor.com)
+## DEMO [www.meteorbb.com](http://www.meteorbb.com)
 
 
 
