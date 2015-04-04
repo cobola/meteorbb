@@ -145,9 +145,6 @@
 .comment-content{
 	position:relative;
 	@extend .grid-block;
-	@include small{
-		border-radius: 3px;
-	}
 	@include medium-large{
 		border-radius: 0 3px 3px 3px;
 	}
