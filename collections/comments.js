@@ -48,14 +48,6 @@ commentSchemaObject = {
         type: [String], // XXX
         optional: true
     },
-    downvotes: {
-        type: Number,
-        optional: true
-    },
-    downvoters: {
-        type: [String], // XXX
-        optional: true
-    },
     author: {
         type: String,
         optional: true

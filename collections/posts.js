@@ -99,20 +99,6 @@ postSchemaObject = {
       omit: true
     }
   },
-  downvotes: {
-    type: Number,
-    optional: true,
-    autoform: {
-      omit: true
-    }
-  },
-  downvoters: {
-    type: [String], // XXX
-    optional: true,
-    autoform: {
-      omit: true
-    }
-  },
   score: {
     type: Number,
     decimal: true,

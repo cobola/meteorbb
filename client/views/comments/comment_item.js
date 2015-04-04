@@ -93,9 +93,6 @@ Template[getTemplate('comment_item')].helpers({
   upvoted: function(){
     return Meteor.user() && _.include(this.upvoters, Meteor.user()._id);
   },
-  downvoted: function(){
-    return Meteor.user() && _.include(this.downvoters, Meteor.user()._id);
-  },
   profileUrl: function(){
     var user = Meteor.users.findOne(this.userId);
     if (user) {
@@ -121,8 +118,6 @@ var handleVoteClick = function (meteorMethodName, eventName, e, instance) {
 };
 
 Template[getTemplate('comment_item')].events({
-  'click .not-upvoted .upvote': _.partial(handleVoteClick, 'upvoteComment', 'post upvoted'),
-  'click .upvoted .upvote': _.partial(handleVoteClick, 'cancelUpvoteComment', 'post upvote cancelled'),
-  'click .not-downvoted .downvote': _.partial(handleVoteClick, 'downvoteComment', 'post downvoted'),
-  'click .downvoted .downvote': _.partial(handleVoteClick, 'cancelDownvoteComment', 'post downvote cancelled')
+  'click  .upvote-link': _.partial(handleVoteClick, 'upvoteComment', 'post upvoted'),
+  'click  .cancel_upvote-link': _.partial(handleVoteClick, 'cancelUpvoteComment', 'post upvote cancelled')
 });

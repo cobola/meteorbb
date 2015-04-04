@@ -3,23 +3,16 @@
 
 
         <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default disabled">{{upvotes}} 赞
+            <button type="button" class="btn btn-default cancel-upvote-link">{{upvotes}} {{_ 'cancel_upvote'}}
                 <i class="glyphicon glyphicon-thumbs-up"></i></button>
-            <button type="button" class="btn btn-default downvote-link">{{downvotes}} 踩
-                <i class="glyphicon glyphicon-thumbs-down"></i></button>
         </div>
 
     {{else}}
 
-
-
         <div class="btn-group" role="group" aria-label="...">
-            <button type="button" class="btn btn-default upvote-link">{{upvotes}} 赞
+            <button type="button" class="btn btn-default upvote-link">{{upvotes}} {{_ 'upvote'}}
                 <i class="glyphicon glyphicon-thumbs-up"></i></button>
-            <button type="button" class="btn btn-default disabled">{{downvotes}} 踩
-                <i class="glyphicon glyphicon-thumbs-down"></i></button>
         </div>
-
 
     {{/if}}
 </template>

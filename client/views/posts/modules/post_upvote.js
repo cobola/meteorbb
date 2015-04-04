@@ -18,14 +18,14 @@ Template[getTemplate('postUpvote')].events({
       trackEvent("post upvoted", {'_id': post._id});
     });
   },
-  'click .downvote-link': function(e, instance){
+  'click .cancel-upvote-link': function(e, instance){
     var post = this;
     e.preventDefault();
     if(!Meteor.user()){
       Router.go('atSignIn');
       flashMessage(i18n.t("please_log_in_first"), "info");
     }
-    Meteor.call('downvotePost', post, function(error, result){
+    Meteor.call('cancelUpvotePost', post, function(error, result){
       trackEvent("post upvoted", {'_id': post._id});
     });
   }
