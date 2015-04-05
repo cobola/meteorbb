@@ -1,12 +1,25 @@
 <template name="search">
+    <style>
+        .search.empty .search-field {
+        background: #ededed url(./img/search-icon.png) no-repeat 9px center;
+        border: solid 1px #ccc;
+        padding: 0 10px 0 32px;
+        width: 140px;
+        border-radius: 15px;
+        transition: all .5s;
+        }
+        .search.empty .search-field:focus {
+            width: 200px;
+            background: #fff url(./img/search-icon.png) no-repeat 9px center;
+            border-color: #66CC75;
+            box-shadow: 0 0 5px rgba(109,207,246,.5);
+        }
+    </style>
     {{#if canSearch}}
         <form class="navbar-form navbar-left" role="search">
             <div class="input-group search {{searchQueryEmpty}} header-submodule">
                 <input id="search" type="search" class="search-field form-control" placeholder="{{_ 'search'}}"
                        value="{{searchQuery}}">
-              <span class="input-group-btn">
-                  <button class="btn btn-default" type="button" id="sbtn">Go!</button>
-              </span>
             </div>
         </form>
     {{/if}}
