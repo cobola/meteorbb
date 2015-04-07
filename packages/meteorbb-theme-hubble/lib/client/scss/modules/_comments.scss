@@ -69,7 +69,12 @@
 }
 
 .comment {
-
+  @include small {
+    margin-left: 10px;
+  }
+  @include medium-large {
+    margin-left: 30px;
+  }
   position: relative;
   padding: 0;
   background: none;
