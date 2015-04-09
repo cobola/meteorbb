@@ -51,7 +51,7 @@ var enableNewsletter = {
     optional: true,
     autoform: {
       group: 'newsletter',
-      instructions: 'Enable newsletter (requires restart).'
+      instructions: '是否开通简讯 (需要重启).'
     }
   }
 }
@@ -62,10 +62,10 @@ var showBanner = {
   propertySchema: {
     type: Boolean,
     optional: true,
-    label: 'Newsletter banner',
+    label: '简讯标识',
     autoform: {
       group: 'newsletter',
-      instructions: 'Show newsletter sign-up form on the front page.'
+      instructions: '在首页显示简讯标识报名表单'
     }
   }
 }
@@ -91,7 +91,7 @@ var mailChimpListId = {
     optional: true,
     autoform: {
       group: 'newsletter',
-      instructions: 'The ID of the list you want to send to.',
+      instructions: '你想要发送到的列表ID',
       private: true
     }
   }
@@ -117,23 +117,23 @@ var newsletterFrequency = {
     optional: true,
     autoform: {
       group: 'newsletter',
-      instructions: 'Defaults to once a week. Changes require restarting your app to take effect.',
+      instructions: '默认每周一次. 更改后需要重启应用生效。',
       options: [
         {
           value: 1,
-          label: 'Every Day'
+          label: '每天'
         },
         {
           value: 2,
-          label: 'Mondays, Wednesdays, Fridays'
+          label: '每周一、三、五'
         },
         {
           value: 3,
-          label: 'Mondays & Thursdays'
+          label: '周一、二'
         },
         {
           value: 7,
-          label: 'Once a week (Mondays)'
+          label: '每周一次（周一）'
         }
       ]
     }
@@ -149,7 +149,7 @@ var newsletterTime = {
     defaultValue: '00:00',
     autoform: {
       group: 'newsletter',
-      instructions: 'Defaults to 00:00/12:00 AM. Time to send out newsletter if enabled.',
+      instructions: '默认 00:00/12:00 上午， 如果开通简讯则在此时间推送。',
       type: 'time'
     }
   }
@@ -163,7 +163,7 @@ var autoSubscribe = {
     optional: true,
     autoform: {
       group: 'newsletter',
-      instructions: 'Automatically subscribe new users on sign-up.'
+      instructions: '新用户注册后自动订阅.'
     }
   }
 }
