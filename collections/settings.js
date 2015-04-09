@@ -304,7 +304,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'email',
-      instructions: 'Content that will appear at the bottom of outgoing emails (accepts HTML).',
+      instructions: '内容将出现在发送的邮件的底部（可以使用HTML）',
       rows: 5,
       private: true
     }
@@ -314,7 +314,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'extras',
-      instructions: 'You can store any notes or extra information here.',
+      instructions: '你可以在这里写任何注释或额外的信息',
       rows: 5,
       private: true
     }
@@ -324,7 +324,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'debug',
-      instructions: 'Enable debug mode for more details console logs'
+      instructions: '启用调试模式显示控制台信息的更多细节'
     }
   },
   authMethods: {
@@ -337,7 +337,7 @@ settingsSchemaObject = {
       options: [
         {
           value: 'email',
-          label: 'Email/Password'
+          label: '邮箱/密码'
         },
         {
           value: 'twitter',
@@ -348,7 +348,7 @@ settingsSchemaObject = {
           label: 'Facebook'
         }
       ],
-      instructions: 'Authentication methods (default to email only)'
+      instructions: '认证方式 (默认邮箱认证)'
     }    
   }
 };

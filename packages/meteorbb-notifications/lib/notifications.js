@@ -91,7 +91,7 @@ var emailNotifications = {
     defaultValue: true,
     autoform: {
       group: 'notifications_fieldset',
-      instructions: 'Enable email notifications for new posts and new comments (requires restart).'
+      instructions: '新贴子和新评论开通邮件通知(需要重启).'
     }
   }
 };
