@@ -2,8 +2,8 @@
 
     <style>
 
-        .navbar{
-            border-radius:0px;
+        .navbar {
+            border-radius: 0px;
         }
     </style>
 
@@ -11,13 +11,7 @@
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                        data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+
                 <a class="navbar-brand" href="/" style="padding:0px;">
 
                     {{#if logo_url}}
@@ -31,38 +25,37 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                <ul class="nav navbar-nav">
-                    <li>
-                        {{> UI.dynamic template="search"}}
-                    </li>
 
+            <ul class="nav navbar-nav hidden-xs hidden-sm">
+                <li>
+                    {{> UI.dynamic template="search"}}
+                </li>
+
+            </ul>
+
+            {{#if hasSecondaryNav}}
+                <ul class="nav navbar-nav navbar-right {{dropdownClass}} hidden-xs hidden-sm">
+                    {{#each secondaryNav}}
+                        <li>
+                            {{> UI.dynamic template=getTemplate}}
+                        </li>
+                    {{/each}}
                 </ul>
+            {{/if}}
+            {{#if hasPrimaryNav}}
+                <ul class="nav  navbar-nav navbar-right {{dropdownClass}} hidden-xs hidden-sm">
+                    {{#each primaryNav}}
+                        <li>
+                            {{> UI.dynamic template=getTemplate}}
+                        </li>
+                    {{/each}}
+                </ul>
+            {{/if}}
 
-                {{#if hasSecondaryNav}}
-                    <ul class="nav navbar-nav navbar-right {{dropdownClass}}">
-                        {{#each secondaryNav}}
-                            <li>
-                                {{> UI.dynamic template=getTemplate}}
-                            </li>
-                        {{/each}}
-                    </ul>
-                {{/if}}
-                {{#if hasPrimaryNav}}
-                    <ul class="nav  navbar-nav navbar-right {{dropdownClass}} ">
-                        {{#each primaryNav}}
-                            <li>
-                                {{> UI.dynamic template=getTemplate}}
-                            </li>
-                        {{/each}}
-                    </ul>
-                {{/if}}
-
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
+        <!-- /.navbar-collapse -->
+
     </nav>
 
 

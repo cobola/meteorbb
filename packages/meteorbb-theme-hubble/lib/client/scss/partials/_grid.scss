@@ -64,4 +64,8 @@ $medium-break: 50em;
 }
 
 .container {
+  @include small-medium{
+    padding: -1em;
+    margin: 0px;
+  }
 }
