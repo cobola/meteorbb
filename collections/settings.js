@@ -10,8 +10,7 @@ settingsSchemaObject = {
     type: String,
     optional: true,
     autoform: {
-      group: 'general',
-      instructions: '站点的URL'
+      group: 'general'
     }
   },
   tagline: {
@@ -26,24 +25,21 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'general',
-      rows: 5,
-      instructions: '网站简介'
+      rows: 5
     }
   },
   requireViewInvite: {
     type: Boolean,
     optional: true,
     autoform: {
-      group: 'invites',
-      leftLabel: 'Require View Invite'
+      group: 'invites'
     }
   },
   requirePostInvite: {
     type: Boolean,
     optional: true,
     autoform: {
-      group: 'invites',
-      leftLabel: 'Require Post Invite'
+      group: 'invites'
     }
   },
   requirePostsApproval: {
@@ -51,8 +47,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'general',
-      instructions: "Posts must be approved by admin",
-      leftLabel: "Require Posts Approval"
+      instructions: '必须由管理员审核后发表'
     }
   },
   defaultEmail: {
@@ -60,7 +55,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'email',
-      instructions: 'The address all outgoing emails will be sent from.',
+      instructions: '系统所有邮件都将从此邮箱发送',
       private: true
     }
   },
@@ -79,7 +74,7 @@ settingsSchemaObject = {
     defaultValue: 30,
     autoform: {
       group: 'scoring',
-      instructions: 'How often to recalculate scores, in seconds (default to 30)',
+      instructions: '多长时间更新一次分数, 以秒计算 (默认 30秒)',
       private: true
     }
   },
@@ -88,7 +83,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'posts',
-      instructions: 'The view used for the front page',
+      instructions: '该视图被用于首页展示',
       options: _.map(viewsMenu, function (view) {
         return {
           value: camelCaseify(view.label),
@@ -102,7 +97,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'posts',
-      instructions: 'The layout used for post lists',
+      instructions: '该布局被用于帖子列表展示',
       options: [
         {value: 'posts-list', label: 'List'},
         {value: 'posts-grid', label: 'Grid'}
@@ -115,7 +110,7 @@ settingsSchemaObject = {
     defaultValue: 30,
     autoform: {
       group: 'posts',
-      instructions: 'Minimum time between posts, in seconds (defaults to 30)'
+      instructions: '2次发帖时间间隔, 以秒为单位 (默认 30秒)'
     }
   },
   commentInterval: {
@@ -124,7 +119,7 @@ settingsSchemaObject = {
     defaultValue: 15,
     autoform: {
       group: 'comments',
-      instructions: 'Minimum time between comments, in seconds (defaults to 15)'
+      instructions: '2次评论时间间隔, 以秒为单位 (默认 15秒)'
     }
   },
   maxPostsPerDay: {
@@ -133,7 +128,7 @@ settingsSchemaObject = {
     defaultValue: 30,
     autoform: {
       group: 'posts',
-      instructions: 'Maximum number of posts a user can post in a day (default to 30).'
+      instructions: '用户一天最大发帖数 (默认 30条).'
     }
   },
   startInvitesCount: {
@@ -203,7 +198,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'extras',
-      instructions: 'CSS code for the <body>\'s "background" property',
+      instructions: 'CSS 样式代码加载到 <body> 标签的 "background" 属性',
       rows: 5
     }
   },
@@ -216,14 +211,14 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'colors',
-      // type: 'color'
+      type: 'color'
     }
   },
   buttonTextColor: {
     type: String,
     optional: true,
     autoform: {
-      group: 'colors',
+      group: 'colors'
       // type: 'color'
     }
   },
@@ -231,8 +226,8 @@ settingsSchemaObject = {
     type: String,
     optional: true,
     autoform: {
-      group: 'colors',
-      // type: 'color'
+      group: 'colors'
+       //type: 'color'
     }
   },
   fontUrl: {
@@ -240,7 +235,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'fonts',
-      instructions: '@import URL (e.g. https://fonts.googleapis.com/css?family=Source+Sans+Pro)'
+      instructions: '例：@import URL (e.g. https://fonts.googleapis.com/css?family=Source+Sans+Pro)'
     }
   },
   fontFamily: {
@@ -248,7 +243,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'fonts',
-      instructions: 'font-family (e.g. "Source Sans Pro", sans-serif)'
+      instructions: '例：font-family (e.g. "Source Sans Pro", sans-serif)'
     }
   },
   headerTextColor: {
@@ -291,7 +286,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'extras',
-      instructions: 'Footer content (accepts Markdown).',
+      instructions: '页面底部内容 (可以使用 Markdown 语言).',
       rows: 5
     }
   },
@@ -300,7 +295,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'extras',
-      instructions: 'Any extra HTML code you want to include on every page.',
+      instructions: '任意一段HTML代码， 你可以引入到所有页面',
       rows: 5
     }
   },
@@ -309,7 +304,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'email',
-      instructions: 'Content that will appear at the bottom of outgoing emails (accepts HTML).',
+      instructions: '内容将出现在发送的邮件的底部（可以使用HTML）',
       rows: 5,
       private: true
     }
@@ -319,7 +314,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'extras',
-      instructions: 'You can store any notes or extra information here.',
+      instructions: '你可以在这里写任何注释或额外的信息',
       rows: 5,
       private: true
     }
@@ -329,7 +324,7 @@ settingsSchemaObject = {
     optional: true,
     autoform: {
       group: 'debug',
-      instructions: 'Enable debug mode for more details console logs'
+      instructions: '启用调试模式显示控制台信息的更多细节'
     }
   },
   authMethods: {
@@ -342,7 +337,7 @@ settingsSchemaObject = {
       options: [
         {
           value: 'email',
-          label: 'Email/Password'
+          label: '邮箱/密码'
         },
         {
           value: 'twitter',
@@ -353,7 +348,7 @@ settingsSchemaObject = {
           label: 'Facebook'
         }
       ],
-      instructions: 'Authentication methods (default to email only)'
+      instructions: '认证方式 (默认邮箱认证)'
     }    
   }
 };

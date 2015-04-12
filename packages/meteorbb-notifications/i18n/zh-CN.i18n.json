@@ -6,5 +6,6 @@
   "you_have_been_unsubscribed_from_all_notifications": "你已经取消了所有的消息提醒.",
   "user_not_found": "用户木找到",
   "1_notification": "1个提醒",
-  "notifications": "提醒"
+  "notifications": "提醒",
+  "emailNotifications": "邮件提醒"
 }
