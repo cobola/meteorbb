@@ -16,11 +16,11 @@
                             <a class="upvote-link" href="#">  {{_ 'upvote'}}<i class="glyphicon glyphicon-thumbs-up"></i></a>
                         {{/if}}
                         <span class="points">{{upvotes}}</span>
-                        <a href="{{pathFor route='comment_reply' _id=_id}}"
-                           class="comment-permalink icon-link goto-comment">{{_ "link"}}</a>
-                        |
-                        <a href="{{pathFor route='comment_reply' _id=_id}}"
-                           class="comment-reply goto-comment">{{_ "reply"}}</a>
+                        <!--<a href="{{pathFor route='comment_reply' _id=_id}}"-->
+                           <!--class="comment-permalink icon-link goto-comment">{{_ "link"}}</a>-->
+                        <!--|-->
+                        <!--<a href="{{pathFor route='comment_reply' _id=_id}}"-->
+                           <!--class="comment-reply goto-comment">{{_ "reply"}}</a>-->
                         {{#if canEdit this}}
                             | <a class="edit-link" href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a>
                         {{/if}}

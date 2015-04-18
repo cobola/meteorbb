@@ -46,23 +46,23 @@ commentAfterSubmitMethodCallbacks.push(function (comment) {
     }
 
     // 2. Notify author of comment being replied to
-    if (!!comment.parentCommentId) {
-  
-      var parentComment = Comments.findOne(comment.parentCommentId);
-      
-      // do not notify author of parent comment if they're also post author or comment author
-      // (someone could be replying to their own comment)
-      if (parentComment.userId !== post.userId && parentComment.userId !== comment.userId) {
-        
-        // add parent comment to notification data
-        notificationData.parentComment = _.pick(parentComment, '_id', 'userId', 'author');
-        
-        Herald.createNotification(parentComment.userId, {courier: 'newReply', data: notificationData});
-        userIdsNotified.push(parentComment.userId);
-      
-      }
-
-    }
+    //if (!!comment.parentCommentId) {
+    //
+    //  var parentComment = Comments.findOne(comment.parentCommentId);
+    //
+    //  // do not notify author of parent comment if they're also post author or comment author
+    //  // (someone could be replying to their own comment)
+    //  if (parentComment.userId !== post.userId && parentComment.userId !== comment.userId) {
+    //
+    //    // add parent comment to notification data
+    //    notificationData.parentComment = _.pick(parentComment, '_id', 'userId', 'author');
+    //
+    //    Herald.createNotification(parentComment.userId, {courier: 'newReply', data: notificationData});
+    //    userIdsNotified.push(parentComment.userId);
+    //
+    //  }
+    //
+    //}
 
     // 3. Notify users subscribed to the thread 
     // TODO: ideally this would be injected from the meteorbb-subscribe-to-posts package

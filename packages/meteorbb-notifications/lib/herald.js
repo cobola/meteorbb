@@ -121,10 +121,11 @@ var commentCourierTransform = {
   },
   postTitle: function () {
     return this.data.post.title;
-  },
-  url: function () {
-    return Router.path('comment_reply', {_id: this.parentComment._id});
   }
+  //,
+  //url: function () {
+  //  return Router.path('comment_reply', {_id: this.parentComment._id});
+  //}
 };
 
 Herald.addCourier('newComment', {

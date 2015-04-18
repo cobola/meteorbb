@@ -72,10 +72,6 @@ Template[getTemplate('comment_item')].helpers({
       return 'author-comment';
     }
   },
-  childComments: function(){
-    // return only child comments
-    return Comments.find({parentCommentId: this._id});
-  },
   author: function(){
     return Meteor.users.findOne(this.userId);
   },

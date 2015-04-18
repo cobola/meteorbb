@@ -1,5 +1,10 @@
 // ------------------------------------ posts ------------------------------------ //
 
+.topic-detail{
+  background: #fff;
+}
+
+
 .posts-wrapper {
   padding: 0;
   margin-bottom: 20px;
@@ -371,6 +376,7 @@
 
 // -------------------------------- post content --------------------------------- //
 
+
 .post-heading {
   margin-bottom: 3px;
   line-height: 1.2;
@@ -423,7 +429,8 @@
 }
 
 .post-body {
-  padding: 20px;
+  padding: 10px;
+  background: #fff;
   font-size: 16px;
   .list & {
     display: none;

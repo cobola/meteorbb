@@ -3,14 +3,6 @@ commentSchemaObject = {
         type: String,
         optional: true
     },
-    parentCommentId: {
-        type: String,
-        optional: true,
-        autoform: {
-            editable: true,
-            omit: true
-        }
-    },
     createdAt: {
         type: Date,
         optional: true
