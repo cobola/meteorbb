@@ -27,26 +27,25 @@ serveAPI = function(limitSegment){
        body: comment.body,
        author: comment.author,
        date: comment.postedAt,
-       guid: comment._id,
-       parentCommentId: comment.parentCommentId
+       guid: comment._id
       };
       comments.push(commentProperties);
     });
 
     var commentsToDelete = [];
 
-    comments.forEach(function(comment, index) {
-      if (comment.parentCommentId) {
-        var parent = comments.filter(function(obj) {
-          return obj.guid === comment.parentCommentId;
-        })[0];
-        if (parent) {
-          parent.replies = parent.replies || [];
-          parent.replies.push(JSON.parse(JSON.stringify(comment)));
-          commentsToDelete.push(index)
-        }
-      }
-    });
+    //comments.forEach(function(comment, index) {
+    //  //if (comment.parentCommentId) {
+    //  //  var parent = comments.filter(function(obj) {
+    //  //    return obj.guid === comment.parentCommentId;
+    //  //  })[0];
+    //  //  if (parent) {
+    //  //    parent.replies = parent.replies || [];
+    //  //    parent.replies.push(JSON.parse(JSON.stringify(comment)));
+    //  //    commentsToDelete.push(index)
+    //  //  }
+    //  //}
+    //});
 
     commentsToDelete.reverse().forEach(function(index) {
       comments.splice(index,1);

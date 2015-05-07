@@ -270,16 +270,6 @@ var migrationsList = {
     });
     return i;
   },
-  parentToParentCommentId: function () {
-    var i = 0;
-    Comments.find({parent: {$exists: true}, parentCommentId: {$exists : false}}).forEach(function (comment) {
-      i++;
-      console.log("Comment: "+comment._id);
-      Comments.update(comment._id, { $set: { 'parentCommentId': comment.parent}}, {multi: true, validate: false});
-      console.log("---------------------");
-    });
-    return i;
-  },
   addLastCommentedAt: function () {
     var i = 0;
     Posts.find({$and: [
@@ -365,16 +355,6 @@ var migrationsList = {
     });
     return i;
   },
-  clicksToClickCount: function () {
-    var i = 0;
-    Posts.find({"clicks": {$exists: true}, "clickCount": {$exists : false}}).forEach(function (post) {
-      i++;
-      console.log("Post: " + post._id);
-      Posts.update(post._id, { $set: { 'clickCount': post.clicks}, $unset: { 'clicks': ''}}, {multi: true, validate: false});
-      console.log("---------------------");
-    });
-    return i;
-  },
   commentsCountToCommentCount: function () {
     var i = 0;
     Posts.find({"commentCount": {$exists : false}}).forEach(function (post) {
@@ -396,16 +376,6 @@ var migrationsList = {
     });
     return i;
    },
-  clicksToClickCountForRealThisTime: function () { // since both fields might be co-existing, add to clickCount instead of overwriting it
-    var i = 0;
-    Posts.find({'clicks': {$exists: true}}).forEach(function (post) {
-      i++;
-      console.log("Post: " + post._id);
-      var result = Posts.update(post._id, { $inc: { 'clickCount': post.clicks}, $unset: {'clicks': ""}}, {multi: true, validate: false});
-      console.log("---------------------");
-    });
-    return i;
-  },
   normalizeCategories: function () {
     var i = 0;
     Posts.find({'categories': {$exists: true}}).forEach(function (post) {

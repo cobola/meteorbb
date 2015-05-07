@@ -1,0 +1,18 @@
+body{
+  .meteorbb-richeditor{
+    background: white;
+    width: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    font-size: 13px;
+    display: none;
+    .btn{
+    }
+    .collapse{
+      display: none;
+      &.in{
+        display: block;
+      }
+    }
+  }
+}

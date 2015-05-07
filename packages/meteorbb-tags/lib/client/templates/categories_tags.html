@@ -1,0 +1,13 @@
+<template name="categoriesTags">
+    {{#if hasCategories}}
+
+        <a href="/" class="label label-default"> {{_ "categories"}}</a>
+
+        {{#each categories}}
+            <a class="label label-info" href="{{categoryLink}}">{{name}}
+            </a> &nbsp;
+
+        {{/each}}
+
+    {{/if}}
+</template>

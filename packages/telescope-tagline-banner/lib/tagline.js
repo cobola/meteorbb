@@ -8,10 +8,10 @@ var showTaglineBanner = {
   propertySchema: {
     type: Boolean,
     optional: true,
-    label: 'Tagline banner',
+    label: '标语banner',
     autoform: {
       group: 'general',
-      instructions: 'Show tagline on homepage.'
+      instructions: '在首页显示标语'
     }
   }
 }

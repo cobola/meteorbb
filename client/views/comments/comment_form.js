@@ -31,10 +31,6 @@ Template[getTemplate('comment_form')].events({
       body: body
     }
 
-    // child comment
-    if (getCurrentTemplate() == 'comment_reply') {
-      comment.parentCommentId = this.comment._id;
-    }
 
     Meteor.call('submitComment', comment, function(error, newComment){
       // $commentForm.prop('disabled', false);

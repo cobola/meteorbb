@@ -4,8 +4,6 @@ Meteor.publish('postsList', function(terms) {
   if(can.viewById(this.userId)){
     var parameters = getPostsParameters(terms),
         posts = Posts.find(parameters.find, parameters.options);
-
-      console.log(parameters);
     return posts;
   }
   return [];

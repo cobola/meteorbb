@@ -3,10 +3,10 @@
 Meteor.publish('singleCommentAndChildren', function(commentId) {
   if(can.viewById(this.userId)){
     // publish both current comment and child comments
-    var commentIds = [commentId];
-    var childCommentIds = _.pluck(Comments.find({parentCommentId: commentId}, {fields: {_id: 1}}).fetch(), '_id');
-    commentIds = commentIds.concat(childCommentIds);
-    return Comments.find({_id: {$in: commentIds}});
+    //var commentIds = [commentId];
+    //var childCommentIds = _.pluck(Comments.find({parentCommentId: commentId}, {fields: {_id: 1}}).fetch(), '_id');
+    //commentIds = commentIds.concat(childCommentIds);
+    //return Comments.find({_id: {$in: commentIds}});
   }
   return [];
 });

@@ -14,22 +14,21 @@
   "my_account": "帐号",
   "view_profile": "个人资料",
   "edit_account": "编辑帐号",
-
   //Main
   "new_posts": "最新提交",
-
   //Commments
-  "your_comment_has_been_deleted": "你的评论已经被删除",
-  "comment_": "评论",
-  "delete_comment": "删除评论",
-  "add_comment": "评论",
-  "upvote": "顶",
-  "downvote": "踩",
+  "your_comment_has_been_deleted": "你的回复已经被删除",
+  "this_comment_has_been_deleted": "回复已经被删除",
+  "comment_": "回复",
+  "comment_edit":"回复编辑",
+  "delete_comment": "删除回复",
+  "add_comment": "回复",
+  "upvote": "赞",
+  "cancel_upvote": "取消赞",
   "link": "链接",
   "edit": "编辑",
   "reply": "回复",
-  "no_comments": "暂时没有评论",
-
+  "no_comments": "暂时没有回复",
   //Errors
   "you_are_already_logged_in": "你已经登录",
   "sorry_this_is_a_private_site_please_sign_up_first": "对不起, 请先注册再进行后续操作",
@@ -38,19 +37,69 @@
   "sorry_you_dont_have_the_rights_to_view_this_page": "抱歉你没有权利查看此页面",
   "not_found": "页面不存在",
   "were_sorry_whatever_you_were_looking_for_isnt_here": "抱歉没有你要查看的内容!",
-
   //Notifications
   "no_notifications": "无消息",
   "1_notification": "1 个消息",
   "notifications": "消息",
   "mark_all_as_read": "标记所有",
-
   // Post deleted
   "your_post_has_been_deleted": "你的帖子已经被删除",
-
   // Post submit & edit
   "created": "创建",
   "title": "标题",
+
+  // 设置表单项翻译-By zhangych 2015-3-31
+  "siteUrl":"站点URL",
+  "tagline":"宣传语",
+  "description":"简介",
+  "requireViewInvite":"登录可见",
+  "requirePostInvite":"登录可发帖",
+  "requirePostsApproval":"审核后发表",
+  "requirePostsApproval_des":"必须由管理员审核后发表",
+  "defaultEmail":"默认邮箱",
+  "mailUrl":"邮件服务器",
+  "scoreUpdateInterval":"计分频率",
+  "defaultView":"默认视图",
+  "most_popular_posts":"置顶",
+  "newest_posts":"最新",
+  "highest_ranked_posts_ever":"精华",
+  "postsLayout":"帖子布局",
+  "postInterval":"发帖间隔",
+  "commentInterval":"评论间隔",
+  "maxPostsPerDay":"每天最大发帖数",
+  "startInvitesCount":"邀请开始计数！Invites Start Count？",
+  "postsPerPage":"每页显示帖子条数",
+  "logoHeight":"logo 高度",
+  "logoWidth":"logo 宽度",
+  "language":"语言",
+  "backgroundCSS":"背景样式",
+  "buttonColor":"按钮颜色",
+  "buttonTextColor":"按钮文字颜色",
+  "headerColor":"页面顶端颜色",
+  "headerTextColor":"页面顶端文字颜色",
+  "twitterAccount":"Twitter 账号",
+  "googleAnalyticsId":"GoogleAnalytics 账号",
+  "mixpanelId":"Mixpane 账号",
+  "clickyId":"Clicky 账号",
+  "footerCode":"页面底部代码",
+  "extraCode":"特殊代码",
+  "emailFooter":"邮件标签",
+  "notes":"注释",
+  "debug":"调试模式",
+  "authMethods":"验证方式",
+  "enableNewsletter":"enableNewsletter|是否开通简讯",
+  "showBanner":"showBanner|简讯标识",
+  "mailChimpAPIKey":"mailChimp API秘钥",
+  "mailChimpListId":"mailChimp 列表Id",
+  "postsPerNewsletter":"推送简讯条数（每天）",
+  "newsletterFrequency":"推送频率",
+  "newsletterTime":"推送时间",
+  "autoSubscribe":"自动订阅",
+  "kadiraAppId": "Kadira App ID",
+  "kadiraAppSecret": "Kadira App 秘钥",
+  "emailNotifications": "邮件通知",
+  "showTaglineBanner": "显示标签线Banner",
+
   "suggest_title": "显示标题",
   "url": "链接地址",
   "short_url": "短网址",
@@ -71,13 +120,8 @@
   "thanks_your_post_is_awaiting_approval": "感谢, 你的帖子正在等待批准.",
   "sorry_couldnt_find_a_title": "抱歉找不相关话题",
   "please_fill_in_an_url_first": "请在第一栏填写链接",
-
   "disallowed_property_detected": "错误的属性值 ",
-
-
   "sorry_we_couldnt_find_any_posts": "对不起，一个帖子都没有找到！",
-
-
   // Post item
   "share": "分享",
   "discuss": "讨论",
@@ -94,7 +138,9 @@
   "comments": "评论数",
   "point": "点击",
   "points": "点击数",
+  "sticky": "置顶",
 
+  "please_log_in_to_comment": "登录后就可以回复了.",
   //User
   "please_complete_your_profile_below_before_continuing": "在继续之前请填写相关资料.",
   "account": "帐号",
@@ -142,12 +188,23 @@
   "invite_none_left": "Invite (none left)",
   "all": "全部",
   "invited": "邀请",
+  "invites": "邀请",
+  "invites_some":"邀请好友来注册",
   "uninvited": "未被邀请",
   "filter_by": "过滤",
   "sort_by": "排序",
+  "twitter_username": "Twitter用户名",
+  "github_username": "GitHub用户名",
+  "profile_url": "个人资料",
 
+  "postedAt": "创建时间",
 
   "you_ve_been_signed_out": "你已经注销了，下次再来哦！",
+
+  "users_dashboard": "用户管理面板",
+
+  "meteorbb_settings_panel":"MeteorBB设置面板",
+
 
   //helpers
   "sorry_you_do_not_have_access_to_this_page": "抱歉你没有权限访问此页面",
@@ -156,7 +213,6 @@
   "sorry_you_dont_have_permissions_to_add_new_items": "抱歉你没有权限添加新项.",
   "sorry_you_cannot_edit_this_post": "对不起你不能编辑这个帖子",
   "sorry_you_cannot_edit_this_comment": "对不起你不能编辑这个评论",
-
   //Collections
   "you_need_to_login_and_be_an_admin_to_add_a_new_category": "你必须登录并且是管理员才能添加新类别.",
   "you_need_to_login_or_be_invited_to_post_new_comments": "你需要登录或被邀请才能发表新的评论.",
@@ -179,7 +235,6 @@
   "your_account_has_been_approved": "你的帐号已被批准",
   "welcome_to": "欢迎来到 ",
   "start_posting": "开始发布.",
-
   // Translation needed (found during migration to tap:i18n)
   "please_fill_in_a_title": "请填写标题",
   "seconds_before_posting_again": "秒前发布",
@@ -198,13 +253,11 @@
   "invites_left": "invites left",
   "id": "ID",
   "name": "名字:",
-  "bio": "Bio:",
   "github": "GitHub",
   "site": "网址",
   "upvoted_posts": "最多踩",
   "downvoted_posts": "Downvoted Posts",
   "mark_as_read": "Mark as read",
-
   //Common
   "pending": "悬而未决...",
   "loading": "加载中...",
@@ -214,7 +267,6 @@
   "please_log_in_first": "请先登录",
   "sign_in_sign_up_with_twitter": "使用微博等/注册",
   "load_more": "加载更多",
-
   "administration": "管理",
   "best": "精华"
 }

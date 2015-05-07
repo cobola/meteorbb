@@ -1,48 +1,47 @@
 <template name="comment_item">
-  <li class="comment module comment-displayed {{commentClass}}" id="{{_id}}">
-   <div class="comment-body">
-      {{#if isDeleted}}
-        <div class="comment-deleted">This comment has been deleted.</div>
-      {{else}}
-      <div class="comment-content">
-        <div class="comment-actions {{#if upvoted}}upvoted{{else}}not-upvoted{{/if}} {{#if downvoted}}downvoted{{else}}not-downvoted{{/if}}">
-          <a class="upvote" href="#">
-            <i class="icon-up"></i>
-            <span>{{_ "upvote"}}</span>
-          </a>
-          <a class="downvote" href="#">
-            <i class="icon-down"></i>
-            <span>{{_ "downvote"}}</span>
-          </a>
+    <li class="comment module comment-displayed {{commentClass}}" id="{{_id}}">
+        <div class="comment-body">
+            {{#if isDeleted}}
+                <div class="comment-deleted">{{_ "this_comment_has_been_deleted"}}</div>
+            {{else}}
+                <div class="comment-content">
+
+                    <div class="comment-meta">
+                        <div class="user-avatar avatar-medium">{{> avatar userId=userId shape="circle"}}</div>
+                        <a class="comment-username" href="{{profileUrl}}">{{authorName}}</a>
+                        <span class="comment-time">{{timeAgo ago}},</span>
+                        {{#if upvoted}}
+                            <a class="cancel_upvote-link" href="#">  {{_ 'cancel_upvote'}}<i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        {{else}}
+                            <a class="upvote-link" href="#">  {{_ 'upvote'}}<i class="glyphicon glyphicon-thumbs-up"></i></a>
+                        {{/if}}
+                        <span class="points">{{upvotes}}</span>
+                        <!--<a href="{{pathFor route='comment_reply' _id=_id}}"-->
+                           <!--class="comment-permalink icon-link goto-comment">{{_ "link"}}</a>-->
+                        <!--|-->
+                        <!--<a href="{{pathFor route='comment_reply' _id=_id}}"-->
+                           <!--class="comment-reply goto-comment">{{_ "reply"}}</a>-->
+                        {{#if canEdit this}}
+                            | <a class="edit-link" href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a>
+                        {{/if}}
+                        {{#if isAdmin}}
+                            | <span>{{formatDate createdAt 'YYYY-MM-DD hh:mm:ss'}}</span>
+                        {{/if}}
+                    </div>
+                    <div class="comment-main">
+                        <div class="comment-text markdown">{{{htmlBody}}}</div>
+                    </div>
+                </div>
+            {{/if}}
+            {{#if showChildComments}}
+                <ul class="comment-children comment-list">
+                    {{#each childComments}}
+                        {{#with this}}
+                            {{> UI.dynamic template=comment_item}}
+                        {{/with}}
+                    {{/each}}
+                </ul>
+            {{/if}}
         </div>
-        <div class="comment-meta">
-          <div class="user-avatar avatar-medium">{{> avatar userId=userId shape="circle"}}</div>
-          <a class="comment-username" href="{{profileUrl}}">{{authorName}}</a>
-          <span class="comment-time">{{timeAgo ago}},</span>
-          <span class="points">{{upvotes}}</span> <span class="unit">points </span>
-          <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-permalink icon-link goto-comment">{{_ "link"}}</a>
-          {{#if canEdit this}}
-            | <a class="edit-link" href="{{pathFor route='comment_edit' _id=_id}}">{{_ "edit"}}</a>
-          {{/if}}
-          {{#if isAdmin}}
-            | <span>{{full_date}}</span>
-          {{/if}}
-        </div>
-        <div class="comment-main"> 
-          <div class="comment-text markdown">{{{htmlBody}}}</div>
-          <a href="{{pathFor route='comment_reply' _id=_id}}" class="comment-reply goto-comment">{{_ "reply"}}</a>
-        </div>
-      </div>
-      {{/if}}
-      {{#if showChildComments}}
-        <ul class="comment-children comment-list">
-        {{#each childComments}}
-          {{#with this}}
-            {{> UI.dynamic template=comment_item}}
-          {{/with}}
-        {{/each}}
-        </ul>
-      {{/if}}
-    </div>
-  </li>
+    </li>
 </template>

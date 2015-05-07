@@ -17,5 +17,16 @@ Template[getTemplate('postUpvote')].events({
     Meteor.call('upvotePost', post, function(error, result){
       trackEvent("post upvoted", {'_id': post._id});
     });
+  },
+  'click .cancel-upvote-link': function(e, instance){
+    var post = this;
+    e.preventDefault();
+    if(!Meteor.user()){
+      Router.go('atSignIn');
+      flashMessage(i18n.t("please_log_in_first"), "info");
+    }
+    Meteor.call('cancelUpvotePost', post, function(error, result){
+      trackEvent("post upvoted", {'_id': post._id});
+    });
   }
 });

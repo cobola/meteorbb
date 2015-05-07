@@ -1,7 +1,13 @@
 <template name="search">
-  {{#if canSearch}}
-    <div class="search {{searchQueryEmpty}} header-submodule">
-      <input id="search" type="search" class="search-field" placeholder="{{_ 'search'}}" value="{{searchQuery}}">
-    </div>
-  {{/if}}
+    {{#if canSearch}}
+        <form class="navbar-form navbar-left" role="search">
+            <div class="input-group search {{searchQueryEmpty}} header-submodule">
+                <input id="search" type="search" class="search-field form-control" placeholder="{{_ 'search'}}"
+                       value="{{searchQuery}}">
+              <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" id="sbtn">Go!</button>
+              </span>
+            </div>
+        </form>
+    {{/if}}
 </template>

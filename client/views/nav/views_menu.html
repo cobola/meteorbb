@@ -1,14 +1,15 @@
 <template name="viewsMenu">
   {{#if canView}}
-    <div class="dropdown header-submodule views-menu">
-      <a class="view dropdown-top-level" href="/">{{_ "view"}}</a>
-      <div class="dropdown-menu">
-        <ul role="menu" aria-labelledby="dLabel">
-          {{#each views}}
-            {{> UI.dynamic template=menuItem data=this}}
-          {{/each}}
-        </ul>
-      </div>
-    </div>
+
+      <ul class="nav navbar-nav navbar-left">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{_ "view"}} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                {{#each views}}
+                  {{> UI.dynamic template=menuItem data=this}}
+                {{/each}}
+              </ul>
+          </li>
+      </ul>
   {{/if}}
 </template>

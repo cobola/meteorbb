@@ -9,10 +9,8 @@ standard-app-packages
 backbone
 accounts-base
 accounts-password
-accounts-twitter
 spiderable
 email
-accounts-facebook
 service-configuration
 accounts-ui
 reactive-var
@@ -46,7 +44,6 @@ rajit:bootstrap3-datepicker
 bengott:avatar
 jparker:gravatar
 tap:i18n
-useraccounts:unstyled@1.4.0
 tsega:bootstrap3-datetimepicker@3.1.3_1
 momentjs:moment
 aslagle:reactive-table
@@ -64,26 +61,35 @@ meteorbb-i18n
 
 # Telescope Packages (Optional)
 
-telescope-datetimepicker
-telescope-theme-base
+meteorbb-datetimepicker
+meteorbb-richeditor
 telescope-module-share
 telescope-api
-telescope-rss
+meteorbb-rss
 meteorbb-search
-telescope-tags
-telescope-theme-hubble
-telescope-email
+meteorbb-tags
+meteorbb-email
 telescope-newsletter
-telescope-daily
+meteorbb-daily
 telescope-update-prompt
-telescope-kadira
-telescope-notifications
-telescope-singleday
-telescope-invites
-telescope-post-by-feed
+meteorbb-kadira
+meteorbb-notifications
+meteorbb-singleday
+meteorbb-invites
 meteorbb-releases
 meteorbb-getting-started
-telescope-subscribe-to-posts
+meteorbb-subscribe-to-posts
 telescope-tagline-banner
 
+meteorbb-theme-base
+meteorbb-theme-hubble
+
 # Custom Packages
+useraccounts:bootstrap
+softwarerero:accounts-t9n
+twbs:bootstrap
+manuelschoebel:ms-seo
+markdown
+summernote:summernote
+hitchcott:app-dump
+wtfzn:bootstrap-markdown

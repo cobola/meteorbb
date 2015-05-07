@@ -38,7 +38,8 @@ postSchemaObject = {
     optional: true,
     autoform: {
       editable: true,
-      rows: 5
+      rows:8,
+      type:"meteorbb-richeditor"
     }
   },
   htmlBody: {
@@ -76,13 +77,6 @@ postSchemaObject = {
       omit: true
     }
   },
-  clickCount: {
-    type: Number,
-    optional: true,
-    autoform: {
-      omit: true
-    }
-  },
   baseScore: {
     type: Number,
     decimal: true,
@@ -99,20 +93,6 @@ postSchemaObject = {
     }
   },
   upvoters: {
-    type: [String], // XXX
-    optional: true,
-    autoform: {
-      omit: true
-    }
-  },
-  downvotes: {
-    type: Number,
-    optional: true,
-    autoform: {
-      omit: true
-    }
-  },
-  downvoters: {
     type: [String], // XXX
     optional: true,
     autoform: {
@@ -150,7 +130,7 @@ postSchemaObject = {
     defaultValue: false,
     autoform: {
       group: 'admin',
-      leftLabel: "Sticky"
+      leftLabel: "置顶"
     }
   },
   inactive: {
@@ -300,7 +280,6 @@ submitPost = function (post) {
     upvotes: 0,
     downvotes: 0,
     commentCount: 0,
-    clickCount: 0,
     viewCount: 0,
     baseScore: 0,
     score: 0,

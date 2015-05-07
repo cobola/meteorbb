@@ -1,11 +1,18 @@
 <template name="postUpvote">
-  {{#if upvoted}}
-    <span class="upvote-link voted action" title="{{_ "upvoted"}}">
-      <i class="icon-check action-icon"></i>
-    </span>
-  {{else}}
-    <a class="upvote-link not-voted action" href="#" title="{{_ "upvote_"}}">
-      <i class="icon-up action-icon"></i>
-    </a>
-  {{/if}}
+    {{#if upvoted}}
+
+
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default cancel-upvote-link">{{upvotes}} {{_ 'cancel_upvote'}}
+                <i class="glyphicon glyphicon-thumbs-up"></i></button>
+        </div>
+
+    {{else}}
+
+        <div class="btn-group" role="group" aria-label="...">
+            <button type="button" class="btn btn-default upvote-link">{{upvotes}} {{_ 'upvote'}}
+                <i class="glyphicon glyphicon-thumbs-up"></i></button>
+        </div>
+
+    {{/if}}
 </template>

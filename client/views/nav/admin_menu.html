@@ -1,14 +1,16 @@
 <template name="adminMenu">
   {{#if isAdmin}}
-    <div class="dropdown header-submodule admin-menu">
-      <a class="admin dropdown-top-level" href="/">{{_ "admin"}}</a>
-      <div class="dropdown-menu">
-        <ul role="menu" aria-labelledby="dLabel">
-          {{#each menu}}
-            {{> UI.dynamic template=menuItem data=this}}
-          {{/each}}
-        </ul>
-      </div>
-    </div>
+
+      <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{_ "admin"}} <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                {{#each menu}}
+                  {{> UI.dynamic template=menuItem data=this}}
+                {{/each}}
+              </ul>
+          </li>
+
+      </ul>
   {{/if}}
 </template>

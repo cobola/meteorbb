@@ -1,12 +1,50 @@
 <template name="post_page">
-  <div class="single-post grid">
-    <div class="posts posts-list">
-      {{> UI.dynamic template=post_item}}
+
+    <div class="container" >
+        <div class="col-md-9">
+
+            <div class="topic-detail am-panel am-panel-default">
+                <div class="am-panel-hd">
+
+                    {{> UI.dynamic template=post_item}}
+                </div>
+                <div class="am-panel-bd">
+                    {{#if body}}
+                        {{> UI.dynamic template=post_body}}
+                    {{/if}}
+                    <div style="padding: 1em;text-align: center">
+                        {{> UI.dynamic template=postUpvote}}
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="am-panel am-panel-default">
+                <div class="am-panel-hd">
+                    共收到 条回复
+                </div>
+                <div class="am-panel-bd">
+
+                    {{> UI.dynamic template=comment_list}}
+                    {{> UI.dynamic template=comment_form}}
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-md-3">
+
+            <!--<div class="panel panel-default">-->
+            <!--<div class="panel-body">-->
+            <!--{{> UI.dynamic template=user}}-->
+
+            <!--</div>-->
+            <!--</div>-->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    No Meteor,No BB！
+                </div>
+            </div>
+        </div>
     </div>
-    {{#if body}}
-      {{> UI.dynamic template=post_body}}
-    {{/if}}
-    {{> UI.dynamic template=comment_form}}
-    {{> UI.dynamic template=comment_list}}
-  </div>
 </template>

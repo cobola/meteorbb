@@ -1,7 +1,4 @@
 Template[getTemplate('layout')].helpers({
-  mobile_nav: function () {
-    return getTemplate('mobile_nav');
-  },
   nav: function () {
     return getTemplate('nav');
   },
