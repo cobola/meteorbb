@@ -1,7 +1,7 @@
 Meteor.methods({
   phoneHome: function  () {
     
-    var url = 'http://version.telescopeapp.org/';
+    var url = 'http://version.meteorbb.com/';
 
     var params = {
       currentVersion: telescopeVersion,
